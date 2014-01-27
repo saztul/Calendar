@@ -225,20 +225,31 @@ window.Calendar = {
       }, 16);
     });
 
-    var Api = {};
-    Api.add_event = function(title, link, from, til, color){
-      var rel_from = Time.to_date(from) - base_time;
-      var row = Math.floor(rel_from/Time._WEEK);
-      var event = $('<a class="cal-entry" href="#"></a>');
-      var style = 'width: 13%;' +
-                  'position:absolute;'+
-                  'top:' + ((row * cell_height)+1) + 'px;' + 
-                  'left:' + (((from.getDay()-1) * 14.2857142857) + 0.1428571429) + '%;' + 
-                  'background:'+color;
-      event.attr('href', link).attr('style', style).attr('title', title).text(title);
-      // draw_target.append(event);
+    var _Store={
+      keys: { id: 0, title: 1, link: 2, from: 3, til: 4 , color: 5, slot: 6, days: 7},
+      events: [],
+      daymap: {}
     };
 
+    var Api = {};
+    Api.add_event = function(title, link, from, til, color){
+      var id = _Store.events.length;
+      var event = [id, title, link, from, til, color, 0, 0];
+      _Store.events[id] = event;
+      
+      for(
+        var day = new Date(from.getFullYear(), from.getMonth(), from.getDate());
+        day <= til;
+        day = new Date(day.getFullYear(), day.getMonth(), day.getDate() + 1)
+      ){
+        event[_Store.keys.days]++
+        key = ""+day.getDate()+'-'+day.getMonth()+'-'+day.getFullYear();
+        
+        if(!_Store.daymap[key]){_Store.daymap[key] = [];}
+        _Store.daymap[key].push(id);
+      }
+    };
+    Api.store = function(){return _Store};
     return Api;
   }
 };
