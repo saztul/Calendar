@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>TuTech Events</title>
+  <link href="calendar.css" media="all" rel="stylesheet">
+  <script src="jquery-1.10.2.js"></script>
+  <script src="time.js"></script>
+  <script src="calendar.js"></script>
+</head>
+<body>
+  <div id="calendar-test" data-from="2011-04-01" data-til="2015-12-31" data-week-start="mo">
+  </div>
+  
+  
+  
+  
+  <div class="sidebar-group" style="display:none"> <label>Events on this Site</label> <h3 data-gotodate="/events?date=2014-11-01">November 2014</h3> <a class="schedule cev"
+  data-ends-at="2014-11-28 18:00:00 +0100" data-starts-at="2014-11-27 09:00:00 +0100" href="/events/1822-International-Conference-on-Traff/edit" title="International Conference
+  on Traffic and Transport Engineering (ICTTE 2014)">International Conference on Traffic and Transport Engineering (ICTTE 2014)</a> <a class="schedule cev"
+  data-ends-at="2014-11-13 18:00:00 +0100" data-starts-at="2014-11-11 09:00:00 +0100" href="/events/1821-Intermodal-2014/edit" title="Intermodal 2014">Intermodal 2014</a> <h3
+  data-gotodate="/events?date=2014-10-01">October 2014</h3> <a class="schedule cev" data-ends-at="2014-10-08 18:00:00 +0200" data-starts-at="2014-10-07 09:00:00 +0200"
+  href="/events/1826-ShortSea-Shipping-Days/edit" title="ShortSea Shipping Days">ShortSea Shipping Days</a> <h3 data-gotodate="/events?date=2014-09-01">September 2014</h3> <a
+  class="schedule cev" data-ends-at="2014-10-01 18:00:00 +0200" data-starts-at="2014-09-29 09:00:00 +0200" href="/events/1819-European-Transport-Conference-201/edit"
+  title="European Transport Conference 2014">European Transport Conference 2014</a> <h3 data-gotodate="/events?date=2014-08-01">August 2014</h3> <a class="schedule cev"
+  data-ends-at="2013-09-04 15:00:00 +0200" data-starts-at="2014-08-31 15:00:00 +0200" href="/events/1749-biocat-2014/edit" title="biocat 2014">biocat 2014</a> <a
+  class="schedule cev" data-ends-at="2014-09-04 18:00:00 +0200" data-starts-at="2014-08-31 11:00:00 +0200" href="/events/1771-biocat2014/edit" title="biocat2014">biocat2014</a>
+  <h3 data-gotodate="/events?date=2014-07-01">July 2014</h3> <a class="schedule cev" data-ends-at="2014-07-02 17:00:00 +0200" data-starts-at="2014-07-01 09:30:00 +0200"
+  href="/events/1739-Business-Contracts-in-English/edit" title="Business Contracts in English">Business Contracts in English</a> <h3
+  data-gotodate="/events?date=2014-06-01">June 2014</h3> <a class="schedule cev" data-ends-at="2014-06-26 18:00:00 +0200" data-starts-at="2014-06-24 09:00:00 +0200"
+  href="/events/1827-TOC-Europe/edit" title="TOC Europe">TOC Europe</a> <a class="schedule cev" data-ends-at="2013-06-19 18:00:00 +0200" data-starts-at="2014-06-16 07:00:00
+  +0200" href="/events/1758-10th-ITS-European-Congress/edit" title="10th ITS European Congress">10th ITS European Congress</a> <a class="schedule cev" data-ends-at="2014-06-11
+  18:00:00 +0200" data-starts-at="2014-06-08 07:00:00 +0200" href="/events/1757-IV2014-Intelligent-Vehicles-Sympo/edit" title="IV2014: Intelligent Vehicles Symposium">IV2014:
+  Intelligent Vehicles Symposium</a> <h3 data-gotodate="/events?date=2014-05-01">May 2014</h3> <a class="schedule cev" data-ends-at="2014-05-15 18:00:00 +0200"
+  data-starts-at="2014-05-15 09:00:00 +0200" href="/events/1824-Baltic-Logistics-Conference-2014/edit" title="Baltic Logistics Conference 2014">Baltic Logistics Conference
+  2014</a> <a class="schedule cev" data-ends-at="2014-05-14 16:00:00 +0200" data-starts-at="2014-05-13 09:00:00 +0200" href="/events/1718-ReMaT-in-Brussels/edit" title="ReMaT
+  in Brussels">ReMaT in Brussels</a> <h3 data-gotodate="/events?date=2014-04-01">April 2014</h3> <a class="schedule cev" data-ends-at="2014-04-25 18:00:00 +0200"
+  data-starts-at="2014-04-22 09:00:00 +0200" href="/events/1823-TransRussia-2014/edit" title="TransRussia 2014">TransRussia 2014</a> <a class="schedule cev"
+  data-ends-at="2014-04-17 18:00:00 +0200" data-starts-at="2014-04-14 09:00:00 +0200" href="/events/1815-TRA-Transport-research-Arena/edit" title="TRA - Transport research
+  Arena">TRA - Transport research Arena</a> <a class="schedule cev" data-ends-at="2014-04-11 18:00:00 +0200" data-starts-at="2014-04-09 09:00:00 +0200"
+  href="/events/1825-Ferry-Shipping-Conference/edit" title="Ferry Shipping Conference">Ferry Shipping Conference</a> <h3 data-gotodate="/events?date=2014-03-01">March 2014</h3>
+  <a class="schedule cev" data-ends-at="2014-03-11 20:30:00 +0100" data-starts-at="2014-03-11 18:30:00 +0100" href="/events/1812-hep-Forum-Unternehmensformen-Haft/edit"
+  title="hep-Forum &quot;Unternehmensformen, Haftung und Steuern&quot;">hep-Forum "Unternehmensformen, Haftung und Steuern"</a> <a class="schedule cev" data-ends-at="2014-03-06
+  18:00:00 +0100" data-starts-at="2014-03-04 09:00:00 +0100" href="/events/1818-Transport-Week-2014/edit" title="Transport Week 2014">Transport Week 2014</a> <h3
+  data-gotodate="/events?date=2014-02-01">February 2014</h3> <a class="schedule cev" data-ends-at="2014-02-27 16:30:00 +0100" data-starts-at="2014-02-27 09:00:00 +0100"
+  href="/events/1820-Kombiverkehrstagung-Organisations/edit" title="Kombiverkehrstagung &quot;Organisationsstrukturen im Intermodalen Verkehr&quot;">Kombiverkehrstagung
+  "Organisationsstrukturen im Intermodalen Verkehr"</a> <a class="schedule cev" data-ends-at="2014-01-21 18:00:00 +0100" data-starts-at="2014-02-20 09:00:00 +0100"
+  href="/events/1817-RORO-Shipping-Conference-2014/edit" title="RORO Shipping Conference 2014">RORO Shipping Conference 2014</a> <a class="schedule cev"
+  data-ends-at="2014-02-18 20:30:00 +0100" data-starts-at="2014-02-18 18:30:00 +0100" href="/events/1809-hep-Forum-Wirtschaftsspionage-und/edit" title="hep-Forum
+  &quot;Wirtschaftsspionage und Wirtschaftsschutz&quot;">hep-Forum "Wirtschaftsspionage und Wirtschaftsschutz"</a> <a class="schedule cev" data-ends-at="2014-02-12 16:30:00
+  +0100" data-starts-at="2014-02-12 09:00:00 +0100" href="/events/1807-How-to-produce-a-winning-proposal/edit" title="How to produce a winning proposal in Horizon 2020">How to
+  produce a winning proposal in Horizon 2020</a> <a class="schedule cev" data-ends-at="2014-02-14 18:00:00 +0100" data-starts-at="2014-02-10 09:00:00 +0100"
+  href="/events/1814-LDIC-2014/edit" title="LDIC 2014">LDIC 2014</a> <h3 data-gotodate="/events?date=2014-01-01">January 2014</h3> <a class="schedule cev"
+  data-ends-at="2014-01-30 18:00:00 +0100" data-starts-at="2014-01-29 09:00:00 +0100" href="/events/1816-BESTFACT-Workshop/edit" title="BESTFACT Workshop">BESTFACT Workshop</a>
+  <a class="schedule cev" data-ends-at="2014-01-22 15:00:00 +0100" data-starts-at="2014-01-21 09:00:00 +0100" href="/events/1753-deponietechnik-2014/edit" title="deponietechnik
+  2014">deponietechnik 2014</a> <a class="schedule cev" data-ends-at="2014-01-16 16:00:00 +0100" data-starts-at="2014-01-16 10:00:00 +0100"
+  href="/events/1811-Pr-sentation-Gothaer-Allgemeine-V/edit" title="Präsentation Gothaer Allgemeine Versicherung AG">Präsentation Gothaer Allgemeine Versicherung AG</a> <a
+  class="schedule cev" data-ends-at="2014-01-16 18:00:00 +0100" data-starts-at="2014-01-16 09:00:00 +0100" href="/events/1813-BK2021/edit" title="BK2021">BK2021</a> <a
+  class="schedule cev" data-ends-at="2014-01-14 16:00:00 +0100" data-starts-at="2014-01-14 13:00:00 +0100" href="/events/1810-Bioraffinerie-2021-3-Clustertreff/edit"
+  title="Bioraffinerie 2021 3. Clustertreffen">Bioraffinerie 2021 3. Clustertreffen</a> <h3 data-gotodate="/events?date=2013-12-01">December 2013</h3> <a class="schedule cev"
+  data-ends-at="2013-12-16 16:30:00 +0100" data-starts-at="2013-12-16 15:00:00 +0100" href="/events/1791-Aufsichtsratssitzung-IE-Leipzig/edit" title="Aufsichtsratssitzung IE
+  Leipzig">Aufsichtsratssitzung IE Leipzig</a> <a class="schedule cev" data-ends-at="2013-12-13 23:00:00 +0100" data-starts-at="2013-12-13 20:00:00 +0100"
+  href="/events/1764-Funny-Bones/edit" title="Funny Bones">Funny Bones</a> <a class="schedule cev" data-ends-at="2013-12-13 13:00:00 +0100" data-starts-at="2013-12-13 09:00:00
+  +0100" href="/events/1779-Konsortialtreffen-EEN/edit" title="Konsortialtreffen EEN">Konsortialtreffen EEN</a> <a class="schedule cev" data-ends-at="2013-12-12 17:00:00 +0100"
+  data-starts-at="2013-12-12 15:00:00 +0100" href="/events/1778-Aufsichtsratssitzung-TuTech-Innov/edit" title="Aufsichtsratssitzung TuTech Innovation GmbH">Aufsichtsratssitzung
+  TuTech Innovation GmbH</a> <a class="schedule cev" data-ends-at="2013-12-12 16:30:00 +0100" data-starts-at="2013-12-12 09:00:00 +0100"
+  href="/events/1743-How-to-produce-a-winning-proposal/edit" title="How to produce a winning proposal in Horizon 2020">How to produce a winning proposal in Horizon 2020</a> <a
+  class="schedule cev" data-ends-at="2013-12-11 13:00:00 +0100" data-starts-at="2013-12-11 10:00:00 +0100" href="/events/1808-Seminar-Techniker-Krankenkasse/edit"
+  title="Seminar Techniker Krankenkasse">Seminar Techniker Krankenkasse</a> <a class="schedule cev" data-ends-at="2013-11-11 13:00:00 +0100" data-starts-at="2013-12-11 10:00:00
+  +0100" href="/events/1777-Seminar-Techniker-Krankenkasse/edit" title="Seminar Techniker Krankenkasse">Seminar Techniker Krankenkasse</a> <a class="schedule cev"
+  data-ends-at="2013-12-10 23:59:00 +0100" data-starts-at="2013-12-10 19:30:00 +0100" href="/events/1763-Tag-der-Menschenrechte/edit" title="Tag der Menschenrechte">Tag der
+  Menschenrechte</a> <a class="schedule cev" data-ends-at="2013-12-10 19:00:00 +0100" data-starts-at="2013-12-10 17:00:00 +0100"
+  href="/events/1781-Bioraffinerie-Regenerative-Chemie/edit" title="Bioraffinerie – Regenerative Chemie aus Stroh und Algen. Mehr als nur Zukunftsmusik!">Bioraffinerie –
+  Regenerative Chemie aus Stroh und Algen. Mehr als nur Zukunftsmusik!</a> <a class="schedule cev" data-ends-at="2013-11-21 19:00:00 +0100" data-starts-at="2013-12-10 17:00:00
+  +0100" href="/events/1794-Biotech-inside-Bioraffinerie-Rege/edit" title="Biotech&gt;inside: &quot;Bioraffinerie – Regenerative Chemie aus Stroh und Algen. Mehr als nur
+  Zukunftsmusik!&quot;">Biotech&gt;inside: "Bioraffinerie – Regenerative Chemie aus Stroh und Algen. Mehr als nur Zukunftsmusik!"</a> <a class="schedule cev"
+  data-ends-at="2013-12-09 17:00:00 +0100" data-starts-at="2013-12-09 09:00:00 +0100" href="/events/1776-2-Workshop-des-FSP-Klimaschonende/edit" title="2. Workshop des FSP
+  „Klimaschonende Energie- und Umwelttechnik“ ">2. Workshop des FSP „Klimaschonende Energie- und Umwelttechnik“ </a> <a class="schedule cev" data-ends-at="2013-12-07 23:59:00
+  +0100" data-starts-at="2013-12-07 20:00:00 +0100" href="/events/1805-Musik-und-Lesung-mit-Willie-Stemw/edit" title="Musik und Lesung mit Willie Stemwede">Musik und Lesung mit
+  Willie Stemwede</a> <a class="schedule cev" data-ends-at="2013-12-07 18:00:00 +0100" data-starts-at="2013-12-07 14:00:00 +0100"
+  href="/events/1799-Der-Kunstpfad-Harburg-F-hrung/edit" title="Der Kunstpfad Harburg - Führung">Der Kunstpfad Harburg - Führung</a> <a class="schedule cev"
+  data-ends-at="2013-12-05 17:00:00 +0100" data-starts-at="2013-12-05 13:00:00 +0100" href="/events/1775-Mitarbeiterversammlung-Siemens-Co/edit" title="Mitarbeiterversammlung
+  Siemens Convergence Creators GmbH &amp; Co. KG">Mitarbeiterversammlung Siemens Convergence Creators GmbH &amp; Co. KG</a> <a class="schedule cev" data-ends-at="2013-12-04
+  00:00:00 +0100" data-starts-at="2013-12-04 17:30:00 +0100" href="/events/1801-channel-x-mas/edit" title="channel x-mas">channel x-mas</a> <a class="schedule cev"
+  data-ends-at="2013-12-03 21:00:00 +0100" data-starts-at="2013-12-03 19:00:00 +0100" href="/events/1773-GR-NE-Fraktion-Harburg-/edit" title="GRÜNE Fraktion Harburg ">GRÜNE
+  Fraktion Harburg </a> <a class="schedule cev" data-ends-at="2013-12-03 20:00:00 +0100" data-starts-at="2013-12-03 17:00:00 +0100" href="/events/1774-Hanse-Supplier/edit"
+  title="Hanse Supplier">Hanse Supplier</a> <a class="schedule cev" data-ends-at="2013-12-03 16:00:00 +0100" data-starts-at="2013-12-03 10:00:00 +0100"
+  href="/events/1802-ARTRAC-Workshop-for-VRU-Specialis/edit" title="ARTRAC Workshop for VRU Specialists">ARTRAC Workshop for VRU Specialists</a> <a class="schedule cev"
+  data-ends-at="2013-12-03 16:00:00 +0100" data-starts-at="2013-12-03 10:00:00 +0100" href="/events/1756-ARTRAC-Workshop-for-VRU-Specialis/edit" title="ARTRAC Workshop for VRU
+  Specialists">ARTRAC Workshop for VRU Specialists</a> <a class="schedule cev" data-ends-at="2013-12-02 18:00:00 +0100" data-starts-at="2013-12-02 07:00:00 +0100"
+  href="/events/1806-test/edit" title="test">test</a> <a class="schedule cev" data-ends-at="2013-12-01 23:59:00 +0100" data-starts-at="2013-12-01 19:00:00 +0100"
+  href="/events/1798-Ein-Jack-Kerouac-Abend-von-und-mi/edit" title="Ein Jack Kerouac Abend von und mit Michael Grill und Marco Moreno">Ein Jack Kerouac Abend von und mit
+  Michael Grill und Marco Moreno</a> <a class="schedule cev" data-ends-at="2013-12-01 16:00:00 +0100" data-starts-at="2013-12-01 10:00:00 +0100"
+  href="/events/1804-Indoor-Flohmarkt/edit" title="Indoor-Flohmarkt">Indoor-Flohmarkt</a> <h3 data-gotodate="/events?date=2013-11-01">November 2013</h3> <a class="schedule cev"
+  data-ends-at="2013-11-29 23:59:00 +0100" data-starts-at="2013-11-29 20:30:00 +0100" href="/events/1762-Peter-Caulton-Farewell-Tour/edit" title="Peter Caulton – Farewell
+  Tour">Peter Caulton – Farewell Tour</a> <a class="schedule cev" data-ends-at="2013-11-29 20:00:00 +0100" data-starts-at="2013-11-29 16:30:00 +0100"
+  href="/events/1795-1-Integrationskonferenz-im-Bezirk/edit" title="1. Integrationskonferenz im Bezirk Harburg">1. Integrationskonferenz im Bezirk Harburg</a> <a
+  class="schedule cev" data-ends-at="2013-11-29 13:00:00 +0100" data-starts-at="2013-11-29 08:30:00 +0100" href="/events/1800-HEKATE/edit" title="HEKATE">HEKATE</a> <a
+  class="schedule cev" data-ends-at="2013-11-28 17:00:00 +0100" data-starts-at="2013-11-28 15:00:00 +0100" href="/events/1790-Aufsichtsratssitzung-Hamburg-Inno/edit"
+  title="Aufsichtsratssitzung Hamburg Innovation GmbH">Aufsichtsratssitzung Hamburg Innovation GmbH</a> <a class="schedule cev" data-ends-at="2013-11-27 20:00:00 +0100"
+  data-starts-at="2013-11-27 17:00:00 +0100" href="/events/1793-Erste-ffentliche-Sitzung-der-Begl/edit" title="Erste Öffentliche Sitzung der Begleitgruppe Harburger
+  Binnenhafen">Erste Öffentliche Sitzung der Begleitgruppe Harburger Binnenhafen</a> <a class="schedule cev" data-ends-at="2013-11-27 17:00:00 +0100" data-starts-at="2013-11-27
+  15:00:00 +0100" href="/events/1789-Denkmalrat-Kulturbeh-rde-Hamburg/edit" title="Denkmalrat - Kulturbehörde Hamburg">Denkmalrat - Kulturbehörde Hamburg</a> <a class="schedule
+  cev" data-ends-at="2013-11-26 13:00:00 +0100" data-starts-at="2013-11-26 10:30:00 +0100" href="/events/1788-EEN-Norddeutschland-Treffen/edit" title="EEN Norddeutschland
+  Treffen">EEN Norddeutschland Treffen</a> <a class="schedule cev" data-ends-at="2013-11-25 23:00:00 +0100" data-starts-at="2013-11-25 19:00:00 +0100"
+  href="/events/1797-HALBER-MENSCH-Lesung-mit-Hartmut-/edit" title="HALBER MENSCH – Lesung mit Hartmut Pospiec">HALBER MENSCH – Lesung mit Hartmut Pospiec</a> <a
+  class="schedule cev" data-ends-at="2013-11-25 21:30:00 +0100" data-starts-at="2013-11-25 18:00:00 +0100" href="/events/1792-Auftaktveranstaltung-zum-Innensta/edit"
+  title="Auftaktveranstaltung zum Innenstadtdialog &quot;Harburg neu denken&quot;">Auftaktveranstaltung zum Innenstadtdialog "Harburg neu denken"</a> <a class="schedule cev"
+  data-ends-at="2013-11-25 13:30:00 +0100" data-starts-at="2013-11-25 09:00:00 +0100" href="/events/1787-Doktorandentreffen-ehemaliger-Mit/edit" title="Doktorandentreffen
+  ehemaliger Mitarbeiter des Arbeitsbereiches Gewässerreinigungstechnik">Doktorandentreffen ehemaliger Mitarbeiter des Arbeitsbereiches Gewässerreinigungstechnik</a> <a
+  class="schedule cev" data-ends-at="2013-11-23 23:59:00 +0100" data-starts-at="2013-11-23 20:00:00 +0100" href="/events/1796-Konzert-LILY-DAHAB-Huellas/edit" title="Konzert:
+  LILY DAHAB – Huellas">Konzert: LILY DAHAB – Huellas</a> <a class="schedule cev" data-ends-at="2013-11-22 22:00:00 +0100" data-starts-at="2013-11-22 19:00:00 +0100"
+  href="/events/1785-Vernissage-Sabine-Schulze-Johns/edit" title="Vernissage Sabine Schulze_Johns">Vernissage Sabine Schulze_Johns</a> <a class="schedule cev"
+  data-ends-at="2013-11-22 22:00:00 +0100" data-starts-at="2013-11-20 20:00:00 +0100" href="/events/1786-Der-Kontrabass/edit" title="Der Kontrabass">Der Kontrabass</a> <a
+  class="schedule cev" data-ends-at="2013-11-20 23:00:00 +0100" data-starts-at="2013-11-20 19:30:00 +0100" href="/events/1736-Rathauskonzert-Prof-Xavier-de-Mai/edit"
+  title="Rathauskonzert: Prof. Xavier de Maistre an der Harfe">Rathauskonzert: Prof. Xavier de Maistre an der Harfe</a> <a class="schedule cev" data-ends-at="2013-11-19
+  13:30:00 +0100" data-starts-at="2013-11-19 11:15:00 +0100" href="/events/1784-KLIMZUG-NORD-Projektausschuss-19-/edit" title="KLIMZUG-NORD Projektausschuss (19)">KLIMZUG-NORD
+  Projektausschuss (19)</a> <a class="schedule cev" data-ends-at="2013-11-15 13:30:00 +0100" data-starts-at="2013-11-19 11:15:00 +0100"
+  href="/events/1783-KLIMZUG-NORD-Projektausschuss-19-/edit" title="KLIMZUG-NORD Projektausschuss (19)">KLIMZUG-NORD Projektausschuss (19)</a> <a class="schedule cev"
+  data-ends-at="2013-11-18 14:00:00 +0100" data-starts-at="2013-11-18 10:00:00 +0100" href="/events/1782-PVA-Statusseminar/edit" title="PVA Statusseminar">PVA Statusseminar</a>
+  <a class="schedule cev" data-ends-at="2013-12-20 18:00:00 +0100" data-starts-at="2013-11-18 08:00:00 +0100" href="/events/1770-Ausstellung-Gezielte-Streifsch-ss/edit"
+  title="Ausstellung „Gezielte Streifschüsse“ im Harburger Rathaus">Ausstellung „Gezielte Streifschüsse“ im Harburger Rathaus</a> <a class="schedule cev"
+  data-ends-at="2013-11-16 14:30:00 +0100" data-starts-at="2013-11-16 10:00:00 +0100" href="/events/1735-Eltern-Sch-lertag-f-r-die-Berufsw/edit" title="Eltern- &amp; Schülertag
+  für die Berufswahl">Eltern- &amp; Schülertag für die Berufswahl</a> <a class="schedule cev" data-ends-at="2013-11-15 23:00:00 +0100" data-starts-at="2013-11-15 20:30:00
+  +0100" href="/events/1761-4-BINNENHAFEN-SONGWRITER-NIGHT/edit" title="4. BINNENHAFEN SONGWRITER NIGHT">4. BINNENHAFEN SONGWRITER NIGHT</a> <a class="schedule cev"
+  data-ends-at="2013-11-15 12:00:00 +0100" data-starts-at="2013-11-15 09:00:00 +0100" href="/events/1769-Betriebsversammlung-ALTRAN-GmbH-C/edit" title="Betriebsversammlung
+  ALTRAN GmbH &amp; Co. KG">Betriebsversammlung ALTRAN GmbH &amp; Co. KG</a> <a class="schedule cev" data-ends-at="2013-11-14 23:00:00 +0100" data-starts-at="2013-11-14
+  20:00:00 +0100" href="/events/1734-Nacht-der-Liedermacher/edit" title="Nacht der Liedermacher">Nacht der Liedermacher</a> <a class="schedule cev" data-ends-at="2013-11-14
+  17:00:00 +0100" data-starts-at="2013-11-14 14:00:00 +0100" href="/events/1752-Pr-sentation-NetApp/edit" title="Präsentation NetApp">Präsentation NetApp</a> <a class="schedule
+  cev" data-ends-at="2013-11-15 16:00:00 +0100" data-starts-at="2013-11-14 09:00:00 +0100" href="/events/1717-Creating-Value-from-Knowledge-/edit" title="Creating Value from
+  Knowledge ">Creating Value from Knowledge </a> <a class="schedule cev" data-ends-at="2013-11-13 23:00:00 +0100" data-starts-at="2013-11-13 18:30:00 +0100"
+  href="/events/1766-Verleihung-des-1-Harburger-Nachha/edit" title="Verleihung des 1. Harburger Nachhaltigkeitspreises ">Verleihung des 1. Harburger Nachhaltigkeitspreises </a>
+  <a class="schedule cev" data-ends-at="2013-11-13 15:00:00 +0100" data-starts-at="2013-11-13 13:00:00 +0100" href="/events/1768-KLIMZUG-NORD-Kursbuch-AG/edit"
+  title="KLIMZUG-NORD Kursbuch AG">KLIMZUG-NORD Kursbuch AG</a> <a class="schedule cev" data-ends-at="2013-11-12 11:30:00 +0100" data-starts-at="2013-11-12 10:00:00 +0100"
+  href="/events/1772-Beiratssitzung-channel-hamburg-e-/edit" title="Beiratssitzung channel hamburg e.V.">Beiratssitzung channel hamburg e.V.</a> <a class="schedule cev"
+  data-ends-at="2013-11-12 17:00:00 +0100" data-starts-at="2013-11-12 09:00:00 +0100" href="/events/1767-Mitgliederversammlung-Wissenschaf/edit" title="Mitgliederversammlung
+  Wissenschaftliche Gesellschaft für Montage, Handhabung und Industrierobotik (MHI) ">Mitgliederversammlung Wissenschaftliche Gesellschaft für Montage, Handhabung und
+  Industrierobotik (MHI) </a> <a class="schedule cev" data-ends-at="2013-11-10 22:00:00 +0100" data-starts-at="2013-11-10 19:00:00 +0100"
+  href="/events/1733-Julie-Dexter-Band-New-Again-Tour-/edit" title="Julie Dexter Band: &quot;New Again&quot; Tour 2013">Julie Dexter Band: "New Again" Tour 2013</a> <a
+  class="schedule cev" data-ends-at="2013-10-10 18:00:00 +0200" data-starts-at="2013-11-09 14:00:00 +0100" href="/events/1760-B-cherflohmarkt-und-Kramladen/edit"
+  title="Bücherflohmarkt und Kramladen">Bücherflohmarkt und Kramladen</a> <a class="schedule cev" data-ends-at="2013-11-08 23:00:00 +0100" data-starts-at="2013-11-08 19:00:00
+  +0100" href="/events/1765-Harburg-Empfang-am-8-November-201/edit" title="Harburg-Empfang am 8. November 2013">Harburg-Empfang am 8. November 2013</a> <a class="schedule cev"
+  data-ends-at="2013-11-07 16:00:00 +0100" data-starts-at="2013-11-07 13:00:00 +0100" href="/events/1755-Pr-sentation-Hanse-Aerospace/edit" title="Präsentation
+  Hanse-Aerospace">Präsentation Hanse-Aerospace</a> <a class="schedule cev" data-ends-at="2013-11-06 18:00:00 +0100" data-starts-at="2013-11-06 15:30:00 +0100"
+  href="/events/1754-Pr-sentation-Hanse-Aerospace/edit" title="Präsentation Hanse-Aerospace">Präsentation Hanse-Aerospace</a> <a class="schedule cev" data-ends-at="2013-11-05
+  23:00:00 +0100" data-starts-at="2013-11-05 20:00:00 +0100" href="/events/1732-Konzert-Zion-I/edit" title="Konzert: Zion I">Konzert: Zion I</a> <a class="schedule cev"
+  data-ends-at="2013-11-05 19:00:00 +0100" data-starts-at="2013-11-05 14:30:00 +0100" href="/events/1751-Atlassian-Roadshow-Hamburg-Produk/edit" title="Atlassian Roadshow
+  Hamburg Produkt-Präsentation JIRA Service Desk">Atlassian Roadshow Hamburg Produkt-Präsentation JIRA Service Desk</a> <a class="schedule cev" data-ends-at="2013-11-07
+  15:00:00 +0100" data-starts-at="2013-11-04 13:00:00 +0100" href="/events/1750-GVT-University-course-2013/edit" title="GVT-University course 2013">GVT-University course
+  2013</a> <a class="schedule cev" data-ends-at="2013-11-02 23:00:00 +0100" data-starts-at="2013-11-02 20:00:00 +0100"
+  href="/events/1759-Konzert-Cookie-Tuesday-Gesa-Egger/edit" title="Konzert: Cookie Tuesday - Gesa Eggers und Maike Höft">Konzert: Cookie Tuesday - Gesa Eggers und Maike
+  Höft</a> <a class="schedule cev" data-ends-at="2013-11-02 00:00:00 +0100" data-starts-at="2013-11-02 17:00:00 +0100"
+  href="/events/1748-5-Nacht-des-Wissens-an-der-TU-Ham/edit" title="5. Nacht des Wissens an der TU Hamburg-Harburg">5. Nacht des Wissens an der TU Hamburg-Harburg</a> <a
+  class="schedule cev" data-ends-at="2013-11-01 00:00:00 +0100" data-starts-at="2013-11-01 16:00:00 +0100" href="/events/1741-IBA-Abschiedsveranstaltung/edit"
+  title="IBA-Abschiedsveranstaltung">IBA-Abschiedsveranstaltung</a> <a class="schedule cev" data-ends-at="2013-11-01 19:00:00 +0100" data-starts-at="2013-11-01 16:00:00 +0100"
+  href="/events/1747-IBN-Vorstandssitzung/edit" title="IBN Vorstandssitzung">IBN Vorstandssitzung</a> <h3 data-gotodate="/events?date=2013-10-01">October 2013</h3> <a
+  class="schedule cev" data-ends-at="2013-10-30 19:00:00 +0100" data-starts-at="2013-10-30 16:00:00 +0100" href="/events/1746-Meeting-HanseAerospace/edit" title="Meeting
+  HanseAerospace">Meeting HanseAerospace</a> <a class="schedule cev" data-ends-at="2013-10-29 13:30:00 +0100" data-starts-at="2013-10-29 10:30:00 +0100"
+  href="/events/1745-KLIMZUG-Nord-AG-Kulturlandschafte/edit" title="KLIMZUG Nord AG Kulturlandschaften">KLIMZUG Nord AG Kulturlandschaften</a> <a class="schedule cev"
+  data-ends-at="2013-10-29 18:00:00 +0100" data-starts-at="2013-10-28 10:00:00 +0100" href="/events/1744-Pro-Exzellenzia-Workshop-F-hrung-/edit" title="Pro Exzellenzia Workshop
+  &quot;Führung von Mitarbeitern&quot;">Pro Exzellenzia Workshop "Führung von Mitarbeitern"</a> <a class="schedule cev" data-ends-at="2013-10-27 19:00:00 +0100"
+  data-starts-at="2013-10-27 15:00:00 +0100" href="/events/1737-Solokonzert-Eddy-Winkelmann/edit" title="Solokonzert Eddy Winkelmann">Solokonzert Eddy Winkelmann</a> <a
+  class="schedule cev" data-ends-at="2013-10-31 18:00:00 +0100" data-starts-at="2013-10-27 07:00:00 +0100" href="/events/1742-Simons-zweites-Test-Event/edit" title="Simons
+  zweites Test-Event">Simons zweites Test-Event</a> <a class="schedule cev" data-ends-at="2013-10-26 20:00:00 +0200" data-starts-at="2013-10-26 10:00:00 +0200"
+  href="/events/1713-Harburger-Kulturtag-2013/edit" title="Harburger Kulturtag 2013">Harburger Kulturtag 2013</a> <a class="schedule cev" data-ends-at="2013-10-26 18:00:00
+  +0200" data-starts-at="2013-10-26 07:00:00 +0200" href="/events/1740-Simons-awesome-test/edit" title="Simons awesome test">Simons awesome test</a> <a class="schedule cev"
+  data-ends-at="2013-10-24 22:00:00 +0200" data-starts-at="2013-10-24 19:00:00 +0200" href="/events/1719-Filmabend-Blaubeerblau-im-Rahmen-/edit" title="Filmabend
+  &quot;Blaubeerblau&quot; im Rahmen der Hamburger Hospizwoche">Filmabend "Blaubeerblau" im Rahmen der Hamburger Hospizwoche</a> <a class="schedule cev"
+  data-ends-at="2013-10-24 21:30:00 +0200" data-starts-at="2013-10-24 19:00:00 +0200" href="/events/1738-Hospizwoche-Filmabend-mit-Hubertu/edit" title="Hospizwoche: Filmabend
+  mit Hubertus Meyer-Burckhardt">Hospizwoche: Filmabend mit Hubertus Meyer-Burckhardt</a> <a class="schedule cev" data-ends-at="2014-05-21 21:00:00 +0200"
+  data-starts-at="2013-10-23 19:30:00 +0200" href="/events/1731-Konzertreihe-Stars-von-Morgen-/edit" title="Konzertreihe: „Stars von Morgen“">Konzertreihe: „Stars von
+  Morgen“</a> <a class="schedule cev" data-ends-at="2013-11-08 00:00:00 +0100" data-starts-at="2013-10-23 00:00:00 +0200"
+  href="/events/1729-Ausstellung-Zerschlagung-der-Mitb/edit" title="Ausstellung &quot;Zerschlagung der Mitbestimmung 1933&quot; im Rathaus Harburg">Ausstellung "Zerschlagung
+  der Mitbestimmung 1933" im Rathaus Harburg</a> <a class="schedule cev" data-ends-at="2013-10-19 21:00:00 +0200" data-starts-at="2013-10-19 16:00:00 +0200"
+  href="/events/1730-Inklusive-S-d-Eine-B-hne-f-r-Alle/edit" title="Inklusive Süd - Eine Bühne für Alle">Inklusive Süd - Eine Bühne für Alle</a> <a class="schedule cev"
+  data-ends-at="2013-11-10 00:00:00 +0100" data-starts-at="2013-10-19 00:00:00 +0200" href="/events/1727-Kulturtage-S-derelbe-2013/edit" title="Kulturtage Süderelbe
+  2013">Kulturtage Süderelbe 2013</a> <a class="schedule cev" data-ends-at="2013-10-18 23:59:00 +0200" data-starts-at="2013-10-18 20:30:00 +0200"
+  href="/events/1712-6-Binnenhafen-Folknight/edit" title="6. Binnenhafen Folknight">6. Binnenhafen Folknight</a> <a class="schedule cev" data-ends-at="2013-10-18 23:00:00
+  +0200" data-starts-at="2013-10-18 20:00:00 +0200" href="/events/1728-Lesung-Heinz-Strunk/edit" title="Lesung: Heinz Strunk">Lesung: Heinz Strunk</a> <a class="schedule cev"
+  data-ends-at="2013-10-17 19:00:00 +0200" data-starts-at="2013-10-17 16:00:00 +0200" href="/events/1723-Kindertheater-Pettersson-und-Find/edit" title="Kindertheater:
+  Pettersson und Findus">Kindertheater: Pettersson und Findus</a> <a class="schedule cev" data-ends-at="2013-10-18 00:00:00 +0200" data-starts-at="2013-10-17 00:00:00 +0200"
+  href="/events/1680-Business-Contracts-in-English/edit" title="Business Contracts in English">Business Contracts in English</a> <a class="schedule cev"
+  data-ends-at="2013-10-16 16:00:00 +0200" data-starts-at="2013-10-16 13:00:00 +0200" href="/events/1726-Bioraffinerie2021-2-Clustertreffe/edit" title="Bioraffinerie2021 - 2.
+  Clustertreffen - Projektphase II: Erweiterung der nutzbaren Biomasseressourcen">Bioraffinerie2021 - 2. Clustertreffen - Projektphase II: Erweiterung der nutzbaren
+  Biomasseressourcen</a> <a class="schedule cev" data-ends-at="2013-10-14 23:59:00 +0200" data-starts-at="2013-10-14 19:30:00 +0200"
+  href="/events/1711-Glanzlichter-Burmas-Lichtbildervo/edit" title="Glanzlichter Burmas - Lichtbildervortrag">Glanzlichter Burmas - Lichtbildervortrag</a> <a class="schedule
+  cev" data-ends-at="2013-10-13 17:00:00 +0200" data-starts-at="2013-10-13 10:30:00 +0200" href="/events/1725-33-Hobbymarkt/edit" title="33. Hobbymarkt">33. Hobbymarkt</a> <a
+  class="schedule cev" data-ends-at="2013-10-12 23:59:00 +0200" data-starts-at="2013-10-12 20:00:00 +0200" href="/events/1710-Konzert-Strange-Moon/edit" title="Konzert: Strange
+  Moon">Konzert: Strange Moon</a> <a class="schedule cev" data-ends-at="2013-10-11 18:00:00 +0200" data-starts-at="2013-10-11 07:00:00 +0200"
+  href="/events/1720-die-kleine-B-hne-Hotel-zu-den-zwe/edit" title="die kleine Bühne - Hotel zu den zwei Welten">die kleine Bühne - Hotel zu den zwei Welten</a> <a
+  class="schedule cev" data-ends-at="2013-10-02 17:00:00 +0200" data-starts-at="2013-10-02 14:00:00 +0200" href="/events/1714-Er-ffnung-Ausstellung-Volk-auf-de/edit"
+  title="Eröffnung: Ausstellung &quot;Volk auf dem Weg&quot;">Eröffnung: Ausstellung "Volk auf dem Weg"</a> <a class="schedule cev" data-ends-at="2013-10-02 14:00:00 +0200"
+  data-starts-at="2013-10-02 11:00:00 +0200" href="/events/1715-1-Arbeitstreffen-Innovationsallia/edit" title="1. Arbeitstreffen &quot;Innovationsallianz Prozessparameter
+  Druck&quot;">1. Arbeitstreffen "Innovationsallianz Prozessparameter Druck"</a> <h3 data-gotodate="/events?date=2013-09-01">September 2013</h3> <a class="schedule cev"
+  data-ends-at="2013-09-30 23:00:00 +0200" data-starts-at="2013-09-30 19:30:00 +0200" href="/events/1709-Lesung-Die-Blunk-Konstante/edit" title="Lesung: Die Blunk
+  Konstante">Lesung: Die Blunk Konstante</a> <a class="schedule cev" data-ends-at="2013-10-02 00:00:00 +0200" data-starts-at="2013-09-30 00:00:00 +0200"
+  href="/events/1643-European-Transport-Conference-201/edit" title="European Transport Conference 2013">European Transport Conference 2013</a> <a class="schedule cev"
+  data-ends-at="2013-09-26 18:00:00 +0200" data-starts-at="2013-09-26 15:00:00 +0200" href="/events/1707-Pr-sentation/edit" title="Präsentation">Präsentation</a> <a
+  class="schedule cev" data-ends-at="2013-09-26 00:00:00 +0200" data-starts-at="2013-09-24 00:00:00 +0200" href="/events/1630-Cool-Logistics-Global-/edit" title="Cool Logistics
+  Global ">Cool Logistics Global </a> <a class="schedule cev" data-ends-at="2013-10-27 18:00:00 +0100" data-starts-at="2013-09-16 11:00:00 +0200"
+  href="/events/1721-Ariane-K-nig-FARBKL-NGE-/edit" title="Ariane König – “FARBKLÄNGE”">Ariane König – “FARBKLÄNGE”</a> <a class="schedule cev" data-ends-at="2013-09-17
+  16:00:00 +0200" data-starts-at="2013-09-16 09:00:00 +0200" href="/events/1675-ReMaT-in-Hamburg/edit" title="ReMaT in Hamburg">ReMaT in Hamburg</a> <a class="schedule cev"
+  data-ends-at="2013-09-13 18:00:00 +0200" data-starts-at="2013-09-12 07:00:00 +0200" href="/events/1705-Bin-im-Hafen-Ausstellung/edit" title="Bin im Hafen Ausstellung">Bin im
+  Hafen Ausstellung</a> <a class="schedule cev" data-ends-at="2013-09-10 22:00:00 +0200" data-starts-at="2013-09-10 19:00:00 +0200"
+  href="/events/1704-Print-unter-Druck-Was-kommt-nach-/edit" title="Print unter Druck: Was kommt nach den HAN in Harburg?">Print unter Druck: Was kommt nach den HAN in
+  Harburg?</a> <a class="schedule cev" data-ends-at="2013-09-05 19:00:00 +0200" data-starts-at="2013-09-05 16:30:00 +0200"
+  href="/events/1703-Workshop-f-r-Harburger-Arbeitgebe/edit" title="Workshop für Harburger Arbeitgeber">Workshop für Harburger Arbeitgeber</a> <a class="schedule cev"
+  data-ends-at="2013-10-30 18:00:00 +0100" data-starts-at="2013-09-03 11:00:00 +0200" href="/events/1722-Ausstellung-Florian-M-ller-MULTIF/edit" title="Ausstellung: Florian
+  Müller – „MULTIFARIOUS“">Ausstellung: Florian Müller – „MULTIFARIOUS“</a> <a class="schedule cev" data-ends-at="2013-09-02 19:00:00 +0200" data-starts-at="2013-09-02 16:30:00
+  +0200" href="/events/1698-Workshop-f-r-Harburger-Arbeitgebe/edit" title="Workshop für Harburger Arbeitgeber">Workshop für Harburger Arbeitgeber</a> <h3
+  data-gotodate="/events?date=2013-08-01">August 2013</h3> <a class="schedule cev" data-ends-at="2013-08-26 18:00:00 +0200" data-starts-at="2013-08-26 12:00:00 +0200"
+  href="/events/1702-testveranstaltung/edit" title="testveranstaltung">testveranstaltung</a> <a class="schedule cev" data-ends-at="2013-08-26 18:00:00 +0200"
+  data-starts-at="2013-08-24 07:00:00 +0200" href="/events/1686-testveranstaltung/edit" title="testveranstaltung">testveranstaltung</a> <a class="schedule cev"
+  data-ends-at="2013-08-23 17:00:00 +0200" data-starts-at="2013-08-23 15:00:00 +0200" href="/events/1700-test-heute-lounge/edit" title="test heute lounge">test heute lounge</a>
+  <a class="schedule cev" data-ends-at="2013-08-23 15:00:00 +0200" data-starts-at="2013-08-23 14:00:00 +0200" href="/events/1701-huhu-intern-/edit" title="huhu (intern)">huhu
+  (intern)</a> <a class="schedule cev" data-ends-at="2013-08-20 18:00:00 +0200" data-starts-at="2013-08-20 07:00:00 +0200" href="/events/1696-test/edit" title="test">test</a>
+  <a class="schedule cev" data-ends-at="2013-08-08 20:30:00 +0200" data-starts-at="2013-08-08 19:00:00 +0200" href="/events/1697-Print-unter-Druck-Was-kommt-nach-/edit"
+  title="Print unter Druck: Was kommt nach den HAN in Harburg?">Print unter Druck: Was kommt nach den HAN in Harburg?</a> <h3 data-gotodate="/events?date=2013-06-01">June
+  2013</h3> <a class="schedule cev" data-ends-at="2013-06-21 00:00:00 +0200" data-starts-at="2013-06-19 00:00:00 +0200" href="/events/1614-TransNav-2013/edit" title="TransNav
+  2013">TransNav 2013</a> <a class="schedule cev" data-ends-at="2013-06-18 10:00:00 +0200" data-starts-at="2013-06-18 07:00:00 +0200" href="/events/1685-Test-Beschreibung/edit"
+  title="Test Beschreibung">Test Beschreibung</a> <a class="schedule cev" data-ends-at="2013-06-14 00:00:00 +0200" data-starts-at="2013-06-14 00:00:00 +0200"
+  href="/events/1681--IBN-Sch-lertag-Open-Lab-am-Freit/edit" title="„IBN-Schülertag Open Lab“ am Freitag, 14. Juni 2013 Hamburger Hochschulinstitute öffnen ihre
+  Labore">„IBN-Schülertag Open Lab“ am Freitag, 14. Juni 2013 Hamburger Hochschulinstitute öffnen ihre Labore</a> <a class="schedule cev" data-ends-at="2013-06-13 17:00:00
+  +0200" data-starts-at="2013-06-13 09:00:00 +0200" href="/events/1665-Get-funded-English-for-Grant-Writ/edit" title="Get funded! English for Grant Writing">Get funded! English
+  for Grant Writing</a> <a class="schedule cev" data-ends-at="2013-06-11 00:00:00 +0200" data-starts-at="2013-06-11 00:00:00 +0200" href="/events/1637-IBN-2013/edit" title="IBN
+  2013">IBN 2013</a> <a class="schedule cev" data-ends-at="2013-06-04 21:00:00 +0200" data-starts-at="2013-06-04 18:30:00 +0200"
+  href="/events/1613-Die-Belege-im-Griff-Was-Jungunter/edit" title="Die Belege im Griff - Was Jungunternehmer über Buchhaltung wissen sollten">Die Belege im Griff - Was
+  Jungunternehmer über Buchhaltung wissen sollten</a> <a class="schedule cev" data-ends-at="2013-06-07 00:00:00 +0200" data-starts-at="2013-06-04 00:00:00 +0200"
+  href="/events/1618-TRANSPORT-LOGISTIC-2013/edit" title="TRANSPORT LOGISTIC 2013">TRANSPORT LOGISTIC 2013</a> <a class="schedule cev" data-ends-at="2013-06-02 18:00:00 +0200"
+  data-starts-at="2013-06-01 11:00:00 +0200" href="/events/1695-Harburger-Binnenhafenfest-2013/edit" title="Harburger Binnenhafenfest 2013">Harburger Binnenhafenfest 2013</a>
+  <h3 data-gotodate="/events?date=2013-05-01">May 2013</h3> <a class="schedule cev" data-ends-at="2013-05-29 19:00:00 +0200" data-starts-at="2013-05-29 16:00:00 +0200"
+  href="/events/1679-Forschungsnachmittag-Life-Science/edit" title="Forschungsnachmittag Life Science Technologies">Forschungsnachmittag Life Science Technologies</a> <a
+  class="schedule cev" data-ends-at="2013-05-22 00:00:00 +0200" data-starts-at="2013-05-21 00:00:00 +0200" href="/events/1633-Conference-on-Maritime-Energy/edit"
+  title="Conference on Maritime Energy">Conference on Maritime Energy</a> <a class="schedule cev" data-ends-at="2013-05-15 14:00:00 +0200" data-starts-at="2013-05-15 11:00:00
+  +0200" href="/events/1682-Pr-sentation-car2share-Mobilit-t-/edit" title="Präsentation car2share - Mobilität ohne eigenes Fahrzeug">Präsentation car2share - Mobilität ohne
+  eigenes Fahrzeug</a> <a class="schedule cev" data-ends-at="2013-05-15 14:00:00 +0200" data-starts-at="2013-05-15 10:00:00 +0200"
+  href="/events/1683-Begleitgruppe-Harburger-Binnenhaf/edit" title="Begleitgruppe Harburger Binnenhafen ">Begleitgruppe Harburger Binnenhafen </a> <a class="schedule cev"
+  data-ends-at="2013-05-07 19:00:00 +0200" data-starts-at="2013-05-07 17:00:00 +0200" href="/events/1676-IBN-Forum-Prozessierung-Von-der-E/edit" title="IBN-Forum Prozessierung:
+  Von der Entwicklung bis zum Produkt">IBN-Forum Prozessierung: Von der Entwicklung bis zum Produkt</a> <h3 data-gotodate="/events?date=2013-04-01">April 2013</h3> <a
+  class="schedule cev" data-ends-at="2013-04-30 00:00:00 +0200" data-starts-at="2013-04-29 00:00:00 +0200" href="/events/1594-ReMaT-in-Brussels/edit" title="ReMaT in
+  Brussels">ReMaT in Brussels</a> <a class="schedule cev" data-ends-at="2013-04-25 14:00:00 +0200" data-starts-at="2013-04-25 09:00:00 +0200"
+  href="/events/1678-Delegation-aus-Singapore/edit" title="Delegation aus Singapore">Delegation aus Singapore</a> <a class="schedule cev" data-ends-at="2013-04-24 18:00:00
+  +0200" data-starts-at="2013-04-24 15:00:00 +0200" href="/events/1677-Auftaktveranstaltung-Fishing-for-/edit" title="Auftaktveranstaltung Fishing for
+  Experiences">Auftaktveranstaltung Fishing for Experiences</a> <a class="schedule cev" data-ends-at="2013-04-26 00:00:00 +0200" data-starts-at="2013-04-23 00:00:00 +0200"
+  href="/events/1629-Multimodal-2013/edit" title="Multimodal 2013">Multimodal 2013</a> <a class="schedule cev" data-ends-at="2013-04-19 14:00:00 +0200"
+  data-starts-at="2013-04-18 11:00:00 +0200" href="/events/1674-Treffen-der-Arbeitsgruppe-Technik/edit" title="Treffen der Arbeitsgruppe Technik der TechnologieAllianz">Treffen
+  der Arbeitsgruppe Technik der TechnologieAllianz</a> <a class="schedule cev" data-ends-at="2013-04-18 00:00:00 +0200" data-starts-at="2013-04-18 00:00:00 +0200"
+  href="/events/1671-EIA-General-Assembly-2013-Intermo/edit" title="EIA General Assembly 2013 Intermodal Round Table">EIA General Assembly 2013 Intermodal Round Table</a> <a
+  class="schedule cev" data-ends-at="2013-04-17 18:00:00 +0200" data-starts-at="2013-04-16 10:00:00 +0200" href="/events/1673-Seminar-Pro-Exzellenzia-Interkult/edit"
+  title="Seminar Pro Exzellenzia - Interkulturelle Kompetenzen">Seminar Pro Exzellenzia - Interkulturelle Kompetenzen</a> <a class="schedule cev" data-ends-at="2013-04-11
+  21:00:00 +0200" data-starts-at="2013-04-11 17:00:00 +0200" href="/events/1670-Der-Wirtschaftsverein/edit" title="Der Wirtschaftsverein">Der Wirtschaftsverein</a> <a
+  class="schedule cev" data-ends-at="2013-04-10 20:30:00 +0200" data-starts-at="2013-04-10 18:00:00 +0200" href="/events/1672-CRM-und-Vertrieb-f-r-kleine-und-m/edit" title="CRM
+  und Vertrieb für kleine und mittelständische Unternehmen">CRM und Vertrieb für kleine und mittelständische Unternehmen</a> <a class="schedule cev" data-ends-at="2013-04-10
+  18:00:00 +0200" data-starts-at="2013-04-10 16:00:00 +0200" href="/events/1669-Stadt-Marketing/edit" title="Stadt-Marketing">Stadt-Marketing</a> <a class="schedule cev"
+  data-ends-at="2013-04-10 00:00:00 +0200" data-starts-at="2013-04-10 00:00:00 +0200" href="/events/1659-Marco-Polo-European-Info-Day/edit" title="Marco Polo European Info
+  Day">Marco Polo European Info Day</a> <a class="schedule cev" data-ends-at="2013-04-04 16:30:00 +0200" data-starts-at="2013-04-04 14:30:00 +0200"
+  href="/events/1668-Open-Innovation-Workshop-BIOKATAL/edit" title="Open Innovation Workshop BIOKATALYSE2021">Open Innovation Workshop BIOKATALYSE2021</a> <a class="schedule
+  cev" data-ends-at="2013-04-04 12:00:00 +0200" data-starts-at="2013-04-04 09:00:00 +0200" href="/events/1667-Delegationsreise-WBC-Inno/edit" title="Delegationsreise WBC
+  Inno">Delegationsreise WBC Inno</a> <a class="schedule cev" data-ends-at="2013-04-07 00:00:00 +0200" data-starts-at="2013-04-04 00:00:00 +0200"
+  href="/events/1617-TRANSPORT-SCANDINAVIA-2013/edit" title="TRANSPORT SCANDINAVIA 2013">TRANSPORT SCANDINAVIA 2013</a> <h3 data-gotodate="/events?date=2013-03-01">March
+  2013</h3> <a class="schedule cev" data-ends-at="2013-03-26 19:30:00 +0100" data-starts-at="2013-03-26 18:00:00 +0100"
+  href="/events/1694-Die-Zukunft-der-Zeitung-Vortrag-v/edit" title="Die Zukunft der Zeitung – Vortrag von Lars Haider">Die Zukunft der Zeitung – Vortrag von Lars Haider</a> <a
+  class="schedule cev" data-ends-at="2013-03-26 17:00:00 +0100" data-starts-at="2013-03-26 15:00:00 +0100" href="/events/1666-Aufsichtsratssitzung-TuTech-Innov/edit"
+  title="Aufsichtsratssitzung TuTech Innovation GmbH">Aufsichtsratssitzung TuTech Innovation GmbH</a> <a class="schedule cev" data-ends-at="2013-03-24 21:00:00 +0100"
+  data-starts-at="2013-03-23 07:00:00 +0100" href="/events/1693-Er-ffnungswochenende-des-Pr-senta/edit" title="Eröffnungswochenende des Präsentationsjahres der
+  IBA_Hamburg">Eröffnungswochenende des Präsentationsjahres der IBA_Hamburg</a> <a class="schedule cev" data-ends-at="2013-03-21 17:00:00 +0100" data-starts-at="2013-03-21
+  15:00:00 +0100" href="/events/1664-Aufsichtsratssitzung-Hamburg-Inno/edit" title="Aufsichtsratssitzung Hamburg Innovation GmbH">Aufsichtsratssitzung Hamburg Innovation
+  GmbH</a> <a class="schedule cev" data-ends-at="2013-03-20 18:30:00 +0100" data-starts-at="2013-03-20 14:00:00 +0100"
+  href="/events/1663-Netzwerk-Hamburg-Career-Services-/edit" title="Netzwerk Hamburg Career Services - Fishing for Experiences">Netzwerk Hamburg Career Services - Fishing for
+  Experiences</a> <a class="schedule cev" data-ends-at="2013-03-21 17:00:00 +0100" data-starts-at="2013-03-20 09:00:00 +0100"
+  href="/events/1662-Seminar-Pro-Exzellenzia-Atem-Stim/edit" title="Seminar Pro Exzellenzia - Atem - Stimme - Sprechen">Seminar Pro Exzellenzia - Atem - Stimme - Sprechen</a>
+  <a class="schedule cev" data-ends-at="2013-03-23 00:00:00 +0100" data-starts-at="2013-03-20 00:00:00 +0100" href="/events/1542-Europort-Istanbul-2013-/edit" title="Europort
+  Istanbul 2013 ">Europort Istanbul 2013 </a> <a class="schedule cev" data-ends-at="2013-03-19 13:30:00 +0100" data-starts-at="2013-03-19 10:30:00 +0100"
+  href="/events/1661-KLIMZUG-Nord-AG-Kulturlandschafte/edit" title="KLIMZUG-Nord AG Kulturlandschaften">KLIMZUG-Nord AG Kulturlandschaften</a> <a class="schedule cev"
+  data-ends-at="2013-03-20 00:00:00 +0100" data-starts-at="2013-03-18 00:00:00 +0100" href="/events/1531-European-Climate-Change-Adaptatio/edit" title="European Climate Change
+  Adaptation Conference 2013">European Climate Change Adaptation Conference 2013</a> <a class="schedule cev" data-ends-at="2013-03-20 00:00:00 +0100" data-starts-at="2013-03-18
+  00:00:00 +0100" href="/events/1517-European-Climate-Change-Adaptatio/edit" title="European Climate Change Adaptation Conference 2013">European Climate Change Adaptation
+  Conference 2013</a> <a class="schedule cev" data-ends-at="2013-03-12 19:00:00 +0100" data-starts-at="2013-03-12 17:00:00 +0100"
+  href="/events/1632-IBN-Forum-Innovative-Technologien/edit" title="IBN-Forum Innovative Technologien zur stofflichen und energetischen Nutzung von Biomasse">IBN-Forum
+  Innovative Technologien zur stofflichen und energetischen Nutzung von Biomasse</a> <a class="schedule cev" data-ends-at="2013-03-12 18:00:00 +0100" data-starts-at="2013-03-12
+  15:00:00 +0100" href="/events/1660-IBN-Mitgliederversammlung/edit" title="IBN Mitgliederversammlung">IBN Mitgliederversammlung</a> <a class="schedule cev"
+  data-ends-at="2013-03-06 17:00:00 +0100" data-starts-at="2013-03-06 15:00:00 +0100" href="/events/1657-Beiratssitzung-Pro-Exzellenzia/edit" title="Beiratssitzung Pro
+  Exzellenzia">Beiratssitzung Pro Exzellenzia</a> <a class="schedule cev" data-ends-at="2013-03-08 00:00:00 +0100" data-starts-at="2013-03-06 00:00:00 +0100"
+  href="/events/1616-Transport-Logistics/edit" title="Transport Logistics">Transport Logistics</a> <a class="schedule cev" data-ends-at="2013-03-04 18:00:00 +0100"
+  data-starts-at="2013-03-04 16:00:00 +0100" href="/events/1658-ALTRAN-GmbH-Co-KG/edit" title="ALTRAN GmbH Co. KG">ALTRAN GmbH Co. KG</a> <a class="schedule cev"
+  data-ends-at="2013-03-05 18:00:00 +0100" data-starts-at="2013-03-04 10:00:00 +0100" href="/events/1656-Seminar-Pro-Exzellenzia/edit" title="Seminar Pro Exzellenzia">Seminar
+  Pro Exzellenzia</a> <a class="schedule cev" data-ends-at="2013-03-01 17:00:00 +0100" data-starts-at="2013-03-01 09:00:00 +0100"
+  href="/events/1654-2-Workshop-des-FSP-Integrierte-Bi/edit" title="2. Workshop des FSP Integrierte Biotechnologie und Prozesstechnik">2. Workshop des FSP Integrierte
+  Biotechnologie und Prozesstechnik</a> <h3 data-gotodate="/events?date=2013-02-01">February 2013</h3> <a class="schedule cev" data-ends-at="2013-02-28 17:00:00 +0100"
+  data-starts-at="2013-02-28 09:00:00 +0100" href="/events/1650-22-Hamburger-Logistik-Kolloquium/edit" title="22. Hamburger Logistik-Kolloquium">22. Hamburger
+  Logistik-Kolloquium</a> <a class="schedule cev" data-ends-at="2013-02-27 15:30:00 +0100" data-starts-at="2013-02-27 13:30:00 +0100"
+  href="/events/1653-Pr-sentation-HanseAerospace/edit" title="Präsentation HanseAerospace">Präsentation HanseAerospace</a> <a class="schedule cev" data-ends-at="2013-02-27
+  19:00:00 +0100" data-starts-at="2013-02-27 13:00:00 +0100" href="/events/1655-Pr-sentation-SkySails-GmbH-Co-KG/edit" title="Präsentation SkySails GmbH Co. KG">Präsentation
+  SkySails GmbH Co. KG</a> <a class="schedule cev" data-ends-at="2013-02-27 15:00:00 +0100" data-starts-at="2013-02-27 11:00:00 +0100"
+  href="/events/1652-channel-jobb-rse-Ihre-Zukunft-Es-/edit" title="channel jobbörse Ihre Zukunft - Es geht um die Wurst!">channel jobbörse Ihre Zukunft - Es geht um die
+  Wurst!</a> <a class="schedule cev" data-ends-at="2013-02-27 17:00:00 +0100" data-starts-at="2013-02-27 11:00:00 +0100"
+  href="/events/1692-Jobb-rse-des-Channel-Hamburg-e-V-/edit" title="Jobbörse des Channel Hamburg e.V.">Jobbörse des Channel Hamburg e.V.</a> <a class="schedule cev"
+  data-ends-at="2013-02-27 12:00:00 +0100" data-starts-at="2013-02-27 09:00:00 +0100" href="/events/1651-Betriebsversammlung-ALTRAN-GmbH-C/edit" title="Betriebsversammlung
+  ALTRAN GmbH Co. KG">Betriebsversammlung ALTRAN GmbH Co. KG</a> <a class="schedule cev" data-ends-at="2013-02-26 22:00:00 +0100" data-starts-at="2013-02-26 18:00:00 +0100"
+  href="/events/1623-Analyse-und-Optimierung-von-Bauwe/edit" title="Analyse und Optimierung von Bauwerken mittels Simulationsrechnung ">Analyse und Optimierung von Bauwerken
+  mittels Simulationsrechnung </a> <a class="schedule cev" data-ends-at="2013-02-26 22:00:00 +0100" data-starts-at="2013-02-26 18:00:00 +0100"
+  href="/events/1691--Analyse-und-Optimierung-von-Bauw/edit" title="&quot;Analyse und Optimierung von Bauwerken mittels Simulationsrechnung”">"Analyse und Optimierung von
+  Bauwerken mittels Simulationsrechnung”</a> <a class="schedule cev" data-ends-at="2013-02-26 19:00:00 +0100" data-starts-at="2013-02-26 17:00:00 +0100"
+  href="/events/1631-IBN-Forum-Mikroreaktionstechnik-i/edit" title="IBN-Forum Mikroreaktionstechnik in der Biotechnologie">IBN-Forum Mikroreaktionstechnik in der
+  Biotechnologie</a> <a class="schedule cev" data-ends-at="2013-02-26 19:00:00 +0100" data-starts-at="2013-02-26 17:00:00 +0100"
+  href="/events/1690--Mikroreaktionstechnik-in-der-Bio/edit" title="“Mikroreaktionstechnik in der Biotechnologie”">“Mikroreaktionstechnik in der Biotechnologie”</a> <a
+  class="schedule cev" data-ends-at="2013-02-26 15:00:00 +0100" data-starts-at="2013-02-26 11:00:00 +0100" href="/events/1644-Konstituierende-DBU-Beiratssitzun/edit"
+  title="Konstituierende DBU-Beiratssitzung">Konstituierende DBU-Beiratssitzung</a> <a class="schedule cev" data-ends-at="2013-02-25 21:00:00 +0100" data-starts-at="2013-02-25
+  19:30:00 +0100" href="/events/1689-Lesung-mit-Lars-Dahms/edit" title="Lesung mit Lars Dahms">Lesung mit Lars Dahms</a> <a class="schedule cev" data-ends-at="2013-02-23
+  22:00:00 +0100" data-starts-at="2013-02-23 20:00:00 +0100" href="/events/1688-Werner-Pfeifer-Konzert/edit" title="Werner Pfeifer Konzert">Werner Pfeifer Konzert</a> <a
+  class="schedule cev" data-ends-at="2013-02-21 18:00:00 +0100" data-starts-at="2013-02-21 16:00:00 +0100" href="/events/1649-Community-Harburger-Binnenhafen/edit"
+  title="Community Harburger Binnenhafen">Community Harburger Binnenhafen</a> <a class="schedule cev" data-ends-at="2013-02-21 17:30:00 +0100" data-starts-at="2013-02-21
+  16:00:00 +0100" href="/events/1687--Wir-starten-eine-Community-/edit" title="&quot;Wir starten eine Community!&quot;">"Wir starten eine Community!"</a> <a class="schedule
+  cev" data-ends-at="2013-02-20 20:30:00 +0100" data-starts-at="2013-02-20 18:00:00 +0100" href="/events/1550-Automatisierung-mit-Industrierobo/edit" title="Automatisierung mit
+  Industrierobotern">Automatisierung mit Industrierobotern</a> <a class="schedule cev" data-ends-at="2013-02-20 20:00:00 +0100" data-starts-at="2013-02-20 12:00:00 +0100"
+  href="/events/1647-Workshop-BERBION-Energie-aus-Pfer/edit" title="Workshop BERBION - Energie aus Pferdemist">Workshop BERBION - Energie aus Pferdemist</a> <a class="schedule
+  cev" data-ends-at="2013-02-20 17:30:00 +0100" data-starts-at="2013-02-19 09:30:00 +0100" href="/events/1648-Seminar-Pro-Exzellenzia/edit" title="Seminar Pro
+  Exzellenzia">Seminar Pro Exzellenzia</a> <a class="schedule cev" data-ends-at="2013-02-19 16:00:00 +0100" data-starts-at="2013-02-19 09:00:00 +0100"
+  href="/events/1646-Merck-Millipore-Reinstwassersemin/edit" title="Merck-Millipore Reinstwasserseminar: Bedeutung von Reinstwasser im analytischen Labor">Merck-Millipore
+  Reinstwasserseminar: Bedeutung von Reinstwasser im analytischen Labor</a> <a class="schedule cev" data-ends-at="2013-02-18 13:00:00 +0100" data-starts-at="2013-02-18 11:00:00
+  +0100" href="/events/1640-KLIMZUG-NORD-Kursbuch-AG-zu-Rahme/edit" title="KLIMZUG-NORD Kursbuch AG zu Rahmenszenarien">KLIMZUG-NORD Kursbuch AG zu Rahmenszenarien</a> <a
+  class="schedule cev" data-ends-at="2013-02-18 12:00:00 +0100" data-starts-at="2013-02-18 10:00:00 +0100" href="/events/1639-Beiratssitzung-channel-hamburg-e-/edit"
+  title="Beiratssitzung channel hamburg e.V.">Beiratssitzung channel hamburg e.V.</a> <a class="schedule cev" data-ends-at="2013-02-15 19:00:00 +0100"
+  data-starts-at="2013-02-15 15:00:00 +0100" href="/events/1642-Pr-sentation-BeOne-Hamburg-GmbH/edit" title="Präsentation BeOne Hamburg GmbH">Präsentation BeOne Hamburg
+  GmbH</a> <a class="schedule cev" data-ends-at="2013-02-12 20:00:00 +0100" data-starts-at="2013-02-12 17:00:00 +0100"
+  href="/events/1638-Kuratorium-Hospiz-f-r-Hamburgs-S-/edit" title="Kuratorium Hospiz für Hamburgs Süden">Kuratorium Hospiz für Hamburgs Süden</a> <a class="schedule cev"
+  data-ends-at="2013-02-06 21:00:00 +0100" data-starts-at="2013-02-06 18:30:00 +0100" href="/events/1607-Notfallkoffer-f-r-Unternehmen/edit" title="Notfallkoffer für
+  Unternehmen">Notfallkoffer für Unternehmen</a> <a class="schedule cev" data-ends-at="2013-02-06 11:30:00 +0100" data-starts-at="2013-02-06 11:00:00 +0100"
+  href="/events/1645-Besuch-der-Senatorin-Prof-Kissele/edit" title="Besuch der Senatorin Prof. Kisseler anläßlich der archäologischen Grabungen an der Schloßstraße und auf der
+  Schloßinsel">Besuch der Senatorin Prof. Kisseler anläßlich der archäologischen Grabungen an der Schloßstraße und auf der Schloßinsel</a> <a class="schedule cev"
+  data-ends-at="2013-02-08 00:00:00 +0100" data-starts-at="2013-02-06 00:00:00 +0100" href="/events/1615-Ports-Terminals-Intermodal-Transp/edit" title="Ports, Terminals
+  Intermodal Transport 2013">Ports, Terminals Intermodal Transport 2013</a> <a class="schedule cev" data-ends-at="2013-02-05 16:00:00 +0100" data-starts-at="2013-02-05 09:00:00
+  +0100" href="/events/1641-Meeting-Agilent-Technologies/edit" title="Meeting Agilent Technologies">Meeting Agilent Technologies</a> <h3
+  data-gotodate="/events?date=2013-01-01">January 2013</h3> <a class="schedule cev" data-ends-at="2013-01-31 18:00:00 +0100" data-starts-at="2013-01-31 10:00:00 +0100"
+  href="/events/1636-Seminar-Pro-Exzellenzia/edit" title="Seminar Pro Exzellenzia">Seminar Pro Exzellenzia</a> <a class="schedule cev" data-ends-at="2013-01-30 17:00:00 +0100"
+  data-starts-at="2013-01-29 09:00:00 +0100" href="/events/1635-Workshop-Personalrat-TUHH/edit" title="Workshop Personalrat TUHH">Workshop Personalrat TUHH</a> <a
+  class="schedule cev" data-ends-at="2013-01-24 13:30:00 +0100" data-starts-at="2013-01-24 10:00:00 +0100" href="/events/1628-KLIMZUG-NORD-AG-Kulturlandschafte/edit"
+  title="KLIMZUG-NORD AG Kulturlandschaften">KLIMZUG-NORD AG Kulturlandschaften</a> <a class="schedule cev" data-ends-at="2013-01-22 20:00:00 +0100" data-starts-at="2013-01-22
+  17:00:00 +0100" href="/events/1634-KLIMZUG-NORD-Beirat/edit" title="KLIMZUG-NORD Beirat">KLIMZUG-NORD Beirat</a> <a class="schedule cev" data-ends-at="2013-01-18 15:00:00
+  +0100" data-starts-at="2013-01-18 11:00:00 +0100" href="/events/1627-IBN-Innovationsallianz/edit" title="IBN - Innovationsallianz">IBN - Innovationsallianz</a> <a
+  class="schedule cev" data-ends-at="2013-01-17 13:30:00 +0100" data-starts-at="2013-01-17 11:00:00 +0100" href="/events/1625-BIOKATALYSE2021-und-Open-Innovati/edit"
+  title="BIOKATALYSE2021 und Open Innovation - Geht das?">BIOKATALYSE2021 und Open Innovation - Geht das?</a> <a class="schedule cev" data-ends-at="2013-01-17 16:00:00 +0100"
+  data-starts-at="2013-01-17 09:00:00 +0100" href="/events/1624-Agilent-Technologies/edit" title="Agilent Technologies">Agilent Technologies</a> <a class="schedule cev"
+  data-ends-at="2013-01-17 00:00:00 +0100" data-starts-at="2013-01-17 00:00:00 +0100" href="/events/1626-Postergutachten-des-Instituts-f-r/edit" title="Postergutachten des
+  Instituts für Feststoffverfahrenstechnik und Partikeltechnologie Technische Universität Hamburg-Harburg">Postergutachten des Instituts für Feststoffverfahrenstechnik und
+  Partikeltechnologie Technische Universität Hamburg-Harburg</a> <a class="schedule cev" data-ends-at="2013-01-14 15:00:00 +0100" data-starts-at="2013-01-14 10:30:00 +0100"
+  href="/events/1622-KLIMZUG-NORD-T1-Treffen/edit" title="KLIMZUG-NORD T1 Treffen">KLIMZUG-NORD T1 Treffen</a> <a class="schedule cev" data-ends-at="2013-01-10 21:00:00 +0100"
+  data-starts-at="2013-01-10 18:30:00 +0100" href="/events/1588-Vom-Kollegen-zum-Vorgesetzten-Ent/edit" title="Vom Kollegen zum Vorgesetzten - Entwicklung von
+  Führungsqualitäten">Vom Kollegen zum Vorgesetzten - Entwicklung von Führungsqualitäten</a> <a class="schedule cev" data-ends-at="2013-01-10 20:00:00 +0100"
+  data-starts-at="2013-01-10 18:00:00 +0100" href="/events/1620-FINE-Netzwerk-CAE/edit" title="FINE Netzwerk CAE">FINE Netzwerk CAE</a> <a class="schedule cev"
+  data-ends-at="2013-01-10 17:00:00 +0100" data-starts-at="2013-01-10 14:30:00 +0100" href="/events/1621-KLIMZUG-Nord-Kursbuch-AG/edit" title="KLIMZUG-Nord Kursbuch
+  AG">KLIMZUG-Nord Kursbuch AG</a> <h3 data-gotodate="/events?date=2012-12-01">December 2012</h3> <a class="schedule cev" data-ends-at="2012-12-18 16:00:00 +0100"
+  data-starts-at="2012-12-18 14:00:00 +0100" href="/events/1619-Allianz-Versicherung/edit" title="Allianz Versicherung">Allianz Versicherung</a> <a class="schedule cev"
+  data-ends-at="2012-12-13 17:00:00 +0100" data-starts-at="2012-12-13 14:00:00 +0100" href="/events/1612-KLIMZUG-Nord-Kursbuch-Autoren-Tre/edit" title="KLIMZUG-Nord Kursbuch
+  Autoren-Treffen">KLIMZUG-Nord Kursbuch Autoren-Treffen</a> <a class="schedule cev" data-ends-at="2012-12-13 12:00:00 +0100" data-starts-at="2012-12-13 09:00:00 +0100"
+  href="/events/1611-Seminar-Techniker-Krankenkasse/edit" title="Seminar Techniker Krankenkasse">Seminar Techniker Krankenkasse</a> <a class="schedule cev"
+  data-ends-at="2012-12-12 16:30:00 +0100" data-starts-at="2012-12-12 13:30:00 +0100" href="/events/1610-Pr-sentation-HanseAerospace/edit" title="Präsentation
+  HanseAerospace">Präsentation HanseAerospace</a> <a class="schedule cev" data-ends-at="2012-12-10 21:00:00 +0100" data-starts-at="2012-12-10 18:30:00 +0100"
+  href="/events/1609-Projektdialog-Harburger-Binnenhaf/edit" title="Projektdialog Harburger Binnenhafen">Projektdialog Harburger Binnenhafen</a> <a class="schedule cev"
+  data-ends-at="2012-12-07 17:00:00 +0100" data-starts-at="2012-12-07 09:00:00 +0100" href="/events/1608-Grant-acquisition-How-to-produce-/edit" title="Grant acquisition - How
+  to produce a winning proposal">Grant acquisition - How to produce a winning proposal</a> <a class="schedule cev" data-ends-at="2012-12-06 20:00:00 +0100"
+  data-starts-at="2012-12-06 17:00:00 +0100" href="/events/1606-FINE-Netzwerk-CAE/edit" title="FINE Netzwerk CAE">FINE Netzwerk CAE</a> <a class="schedule cev"
+  data-ends-at="2012-12-06 17:00:00 +0100" data-starts-at="2012-12-06 15:00:00 +0100" href="/events/1605-Aufsichtsratssitzung-Hamburg-Inno/edit" title="Aufsichtsratssitzung
+  Hamburg Innovation GmbH">Aufsichtsratssitzung Hamburg Innovation GmbH</a> <a class="schedule cev" data-ends-at="2012-12-05 21:00:00 +0100" data-starts-at="2012-12-05 17:00:00
+  +0100" href="/events/1587-Biotechinside/edit" title="Biotechinside">Biotechinside</a> <a class="schedule cev" data-ends-at="2012-12-05 16:00:00 +0100"
+  data-starts-at="2012-12-05 14:00:00 +0100" href="/events/1604-Aufsichtsratssitzung-IE-Leipzig/edit" title="Aufsichtsratssitzung IE Leipzig">Aufsichtsratssitzung IE
+  Leipzig</a> <h3 data-gotodate="/events?date=2012-11-01">November 2012</h3> <a class="schedule cev" data-ends-at="2012-11-30 16:00:00 +0100" data-starts-at="2012-11-30
+  09:00:00 +0100" href="/events/1603-Sicherheitskonferenz-Harburg-Mit-/edit" title="Sicherheitskonferenz Harburg - Mit Zivilcourage gegen
+  Rechtsextremismus">Sicherheitskonferenz Harburg - Mit Zivilcourage gegen Rechtsextremismus</a> <a class="schedule cev" data-ends-at="2012-11-29 17:00:00 +0100"
+  data-starts-at="2012-11-29 15:00:00 +0100" href="/events/1602-Aufsichtsratssitzung-TuTech-Innov/edit" title="Aufsichtsratssitzung TuTech Innovation GmbH">Aufsichtsratssitzung
+  TuTech Innovation GmbH</a> <a class="schedule cev" data-ends-at="2012-11-29 17:00:00 +0100" data-starts-at="2012-11-29 14:00:00 +0100"
+  href="/events/1601-Siemens-Communications-Media-and-/edit" title="Siemens Communications, Media and Technology">Siemens Communications, Media and Technology</a> <a
+  class="schedule cev" data-ends-at="2012-11-28 21:00:00 +0100" data-starts-at="2012-11-28 18:30:00 +0100" href="/events/1584-Kostenmanagement-und-Controlling/edit"
+  title="Kostenmanagement und Controlling">Kostenmanagement und Controlling</a> <a class="schedule cev" data-ends-at="2012-11-28 15:30:00 +0100" data-starts-at="2012-11-28
+  12:30:00 +0100" href="/events/1600-Siemens-Communications-Media-and-/edit" title="Siemens Communications, Media and Technology">Siemens Communications, Media and
+  Technology</a> <a class="schedule cev" data-ends-at="2012-11-27 16:30:00 +0100" data-starts-at="2012-11-27 14:00:00 +0100"
+  href="/events/1599-KLIMZUG-NORD-Modellgebiet-L-nebur/edit" title="KLIMZUG-NORD Modellgebiet Lüneburger Heide">KLIMZUG-NORD Modellgebiet Lüneburger Heide</a> <a
+  class="schedule cev" data-ends-at="2012-11-27 13:30:00 +0100" data-starts-at="2012-11-27 11:00:00 +0100" href="/events/1597-KLIMZUG-NORD-Projektausschuss-16-/edit"
+  title="KLIMZUG-NORD Projektausschuss 16. Sitzung">KLIMZUG-NORD Projektausschuss 16. Sitzung</a> <a class="schedule cev" data-ends-at="2012-11-27 11:00:00 +0100"
+  data-starts-at="2012-11-27 10:00:00 +0100" href="/events/1598-KLIMZUG-NORD-Koordinatoren-Runde/edit" title="KLIMZUG-NORD Koordinatoren-Runde">KLIMZUG-NORD
+  Koordinatoren-Runde</a> <a class="schedule cev" data-ends-at="2012-11-29 17:00:00 +0100" data-starts-at="2012-11-27 09:00:00 +0100" href="/events/1514-Intermodal-2012/edit"
+  title="Intermodal 2012">Intermodal 2012</a> <a class="schedule cev" data-ends-at="2012-11-26 13:00:00 +0100" data-starts-at="2012-11-26 10:30:00 +0100"
+  href="/events/1595-PVA-Statusseminar/edit" title="PVA Statusseminar">PVA Statusseminar</a> <a class="schedule cev" data-ends-at="2012-11-26 13:00:00 +0100"
+  data-starts-at="2012-11-26 09:30:00 +0100" href="/events/1596-2012-Alumni-Erfahrungsaustausch-A/edit" title="2012 Alumni Erfahrungsaustausch Abwasserwirtschaft an der
+  TUHH">2012 Alumni Erfahrungsaustausch Abwasserwirtschaft an der TUHH</a> <a class="schedule cev" data-ends-at="2012-11-22 18:00:00 +0100" data-starts-at="2012-11-22 15:00:00
+  +0100" href="/events/1593-Pr-sentation-HanseAerospace/edit" title="Präsentation HanseAerospace">Präsentation HanseAerospace</a> <a class="schedule cev"
+  data-ends-at="2012-11-23 00:00:00 +0100" data-starts-at="2012-11-22 00:00:00 +0100" href="/events/1524-ARTRAC-Consortium-Meeting-in-Brun/edit" title="ARTRAC Consortium
+  Meeting in Brunswick">ARTRAC Consortium Meeting in Brunswick</a> <a class="schedule cev" data-ends-at="2012-11-20 16:30:00 +0100" data-starts-at="2012-11-20 09:30:00 +0100"
+  href="/events/1592-CVP-Project-Development-GmbH/edit" title="CVP Project Development GmbH">CVP Project Development GmbH</a> <a class="schedule cev" data-ends-at="2012-11-15
+  20:00:00 +0100" data-starts-at="2012-11-15 12:00:00 +0100" href="/events/1582-Jubil-umsfeier-20-Jahre-TuTech-In/edit" title="Jubiläumsfeier: 20 Jahre TuTech Innovation
+  GmbH">Jubiläumsfeier: 20 Jahre TuTech Innovation GmbH</a> <a class="schedule cev" data-ends-at="2012-11-16 16:00:00 +0100" data-starts-at="2012-11-15 10:00:00 +0100"
+  href="/events/1525-ISETC-2012/edit" title="ISETC 2012">ISETC 2012</a> <a class="schedule cev" data-ends-at="2012-11-14 16:00:00 +0100" data-starts-at="2012-11-14 10:30:00
+  +0100" href="/events/1591-Leipziger-Institut-f-r-Energie-Gm/edit" title="Leipziger Institut für Energie GmbH">Leipziger Institut für Energie GmbH</a> <a class="schedule cev"
+  data-ends-at="2012-11-13 21:00:00 +0100" data-starts-at="2012-11-13 18:00:00 +0100" href="/events/1566-Intelligente-Mikrosysteme-in-der-/edit" title="Intelligente
+  Mikrosysteme in der modernen Medizintechnik">Intelligente Mikrosysteme in der modernen Medizintechnik</a> <a class="schedule cev" data-ends-at="2012-11-13 18:00:00 +0100"
+  data-starts-at="2012-11-12 10:00:00 +0100" href="/events/1590-Seminar-Pro-Exzellenzia/edit" title="Seminar Pro Exzellenzia">Seminar Pro Exzellenzia</a> <a class="schedule
+  cev" data-ends-at="2012-11-10 00:00:00 +0100" data-starts-at="2012-11-09 00:00:00 +0100" href="/events/1581-Netzwerk-Hamburg-Career-Services-/edit" title="Netzwerk Hamburg
+  Career Services - Fishing for Experiences">Netzwerk Hamburg Career Services - Fishing for Experiences</a> <a class="schedule cev" data-ends-at="2012-11-08 00:00:00 +0100"
+  data-starts-at="2012-11-08 00:00:00 +0100" href="/events/1585-GVT-University-courese-Fluidizati/edit" title="GVT-University courese Fluidization Technology">GVT-University
+  courese Fluidization Technology</a> <a class="schedule cev" data-ends-at="2012-11-08 00:00:00 +0100" data-starts-at="2012-11-08 00:00:00 +0100"
+  href="/events/1586-Seminar-Strahlenschutz-S5/edit" title="Seminar Strahlenschutz S5">Seminar Strahlenschutz S5</a> <a class="schedule cev" data-ends-at="2012-11-08 00:00:00
+  +0100" data-starts-at="2012-11-07 00:00:00 +0100" href="/events/1459-Strahlenschutzkurs/edit" title="Strahlenschutzkurs">Strahlenschutzkurs</a> <a class="schedule cev"
+  data-ends-at="2012-11-05 18:00:00 +0100" data-starts-at="2012-11-05 16:00:00 +0100" href="/events/1583-Delegationsreise-russischer-Unive/edit" title="Delegationsreise
+  russischer Universitäten nach Hamburg">Delegationsreise russischer Universitäten nach Hamburg</a> <a class="schedule cev" data-ends-at="2012-11-08 00:00:00 +0100"
+  data-starts-at="2012-11-05 00:00:00 +0100" href="/events/1580-GVT-University-course-2012/edit" title="GVT-University course 2012">GVT-University course 2012</a> <a
+  class="schedule cev" data-ends-at="2012-11-08 00:00:00 +0100" data-starts-at="2012-11-05 00:00:00 +0100" href="/events/1540-ITST-2012/edit" title="ITST 2012">ITST 2012</a> <a
+  class="schedule cev" data-ends-at="2012-11-04 13:00:00 +0100" data-starts-at="2012-11-04 10:00:00 +0100" href="/events/1589-easynet-GmbH/edit" title="easynet GmbH">easynet
+  GmbH</a> <h3 data-gotodate="/events?date=2012-10-01">October 2012</h3> <a class="schedule cev" data-ends-at="2012-10-31 20:00:00 +0100" data-starts-at="2012-10-31 17:00:00
+  +0100" href="/events/1579-FINE-Netzwerk-CAE/edit" title="FINE Netzwerk CAE">FINE Netzwerk CAE</a> <a class="schedule cev" data-ends-at="2012-10-31 12:30:00 +0100"
+  data-starts-at="2012-10-31 09:30:00 +0100" href="/events/1578-KLIMZUG-NORD-Vorbereitungstreffen/edit" title="KLIMZUG-NORD Vorbereitungstreffen Regionalkonferenz 2012
+  Bremerhaven: Workshop Stadtklima mit Thementischen">KLIMZUG-NORD Vorbereitungstreffen Regionalkonferenz 2012 Bremerhaven: Workshop Stadtklima mit Thementischen</a> <a
+  class="schedule cev" data-ends-at="2012-10-30 18:00:00 +0100" data-starts-at="2012-10-30 15:00:00 +0100" href="/events/1577-Auftaktveranstaltung-Fishing-for-/edit"
+  title="Auftaktveranstaltung Fishing for Experiences ">Auftaktveranstaltung Fishing for Experiences </a> <a class="schedule cev" data-ends-at="2012-10-29 17:00:00 +0100"
+  data-starts-at="2012-10-29 13:00:00 +0100" href="/events/1576-Seels-Meeting-BMC-MYMIC/edit" title="Seels Meeting BMC / MYMIC">Seels Meeting BMC / MYMIC</a> <a class="schedule
+  cev" data-ends-at="2012-10-25 21:30:00 +0200" data-starts-at="2012-10-25 18:00:00 +0200" href="/events/1433-Computergest-tzte-Wettervorhersag/edit" title="Computergestützte
+  Wettervorhersagen">Computergestützte Wettervorhersagen</a> <a class="schedule cev" data-ends-at="2012-10-24 19:00:00 +0200" data-starts-at="2012-10-24 17:00:00 +0200"
+  href="/events/1574-Modelica-User-Group-Hamburg/edit" title="Modelica User Group Hamburg">Modelica User Group Hamburg</a> <a class="schedule cev" data-ends-at="2012-10-23
+  14:00:00 +0200" data-starts-at="2012-10-23 08:00:00 +0200" href="/events/1575-Jubil-umsfeier-der-Beratungsstell/edit" title="Jubiläumsfeier der Beratungsstelle
+  Diakonie-Hilfswerk Hamburg">Jubiläumsfeier der Beratungsstelle Diakonie-Hilfswerk Hamburg</a> <a class="schedule cev" data-ends-at="2012-10-26 18:00:00 +0200"
+  data-starts-at="2012-10-22 09:00:00 +0200" href="/events/1487-19th-World-Congress-on-Intelligen/edit" title="19th World Congress on Intelligent Transport Systems">19th World
+  Congress on Intelligent Transport Systems</a> <a class="schedule cev" data-ends-at="2012-10-18 16:00:00 +0200" data-starts-at="2012-10-18 08:30:00 +0200"
+  href="/events/1570-Agilent-Technologies/edit" title="Agilent Technologies">Agilent Technologies</a> <a class="schedule cev" data-ends-at="2012-10-17 22:00:00 +0200"
+  data-starts-at="2012-10-17 18:00:00 +0200" href="/events/1547-Kooperationsvertr-ge-sinnvoll-ges/edit" title="Kooperationsverträge sinnvoll gestalten">Kooperationsverträge
+  sinnvoll gestalten</a> <a class="schedule cev" data-ends-at="2012-10-16 12:00:00 +0200" data-starts-at="2012-10-16 10:00:00 +0200"
+  href="/events/1573-Aufsichtsratssitzung-TuTech-Innov/edit" title="Aufsichtsratssitzung TuTech Innovation GmbH">Aufsichtsratssitzung TuTech Innovation GmbH</a> <a
+  class="schedule cev" data-ends-at="2012-10-15 16:00:00 +0200" data-starts-at="2012-10-15 13:00:00 +0200" href="/events/1572-KLIMZUG-Nord-Kursbuch-AG/edit" title="KLIMZUG-Nord
+  Kursbuch AG">KLIMZUG-Nord Kursbuch AG</a> <a class="schedule cev" data-ends-at="2012-10-10 16:30:00 +0200" data-starts-at="2012-10-10 09:30:00 +0200"
+  href="/events/1492-Get-funded-English-for-Grant-Writ/edit" title="Get funded! English for Grant Writing">Get funded! English for Grant Writing</a> <a class="schedule cev"
+  data-ends-at="2012-10-10 16:30:00 +0200" data-starts-at="2012-10-10 09:30:00 +0200" href="/events/1494-Get-funded-English-for-Grant-Writ/edit" title="Get funded! English for
+  Grant Writing">Get funded! English for Grant Writing</a> <a class="schedule cev" data-ends-at="2012-10-10 16:00:00 +0200" data-starts-at="2012-10-08 09:00:00 +0200"
+  href="/events/1502-The-Aachen-Colloquium-/edit" title="The Aachen Colloquium ">The Aachen Colloquium </a> <a class="schedule cev" data-ends-at="2012-10-05 17:00:00 +0200"
+  data-starts-at="2012-10-03 09:00:00 +0200" href="/events/1513-Green-Port-Congress-2012/edit" title="Green Port Congress 2012">Green Port Congress 2012</a> <a class="schedule
+  cev" data-ends-at="2012-10-02 15:00:00 +0200" data-starts-at="2012-10-02 09:30:00 +0200" href="/events/1571-Modellregion-L-neburger-Heide/edit" title="Modellregion Lüneburger
+  Heide">Modellregion Lüneburger Heide</a> <h3 data-gotodate="/events?date=2012-09-01">September 2012</h3> <a class="schedule cev" data-ends-at="2012-09-28 00:00:00 +0200"
+  data-starts-at="2012-09-26 00:00:00 +0200" href="/events/1545-Fehmarnbelt-Days-2012/edit" title="Fehmarnbelt Days 2012">Fehmarnbelt Days 2012</a> <a class="schedule cev"
+  data-ends-at="2012-09-25 16:00:00 +0200" data-starts-at="2012-09-24 09:00:00 +0200" href="/events/1484-ReMaT-Workshop-/edit" title="ReMaT-Workshop ">ReMaT-Workshop </a> <a
+  class="schedule cev" data-ends-at="2012-09-25 16:00:00 +0200" data-starts-at="2012-09-24 09:00:00 +0200" href="/events/1485-ReMaT-Workshop-for-Early-Stage-Re/edit"
+  title="ReMaT Workshop for Early-Stage-Researchers">ReMaT Workshop for Early-Stage-Researchers</a> <a class="schedule cev" data-ends-at="2012-09-25 00:00:00 +0200"
+  data-starts-at="2012-09-24 00:00:00 +0200" href="/events/1541-Euro-Trans-2012/edit" title="Euro – Trans 2012">Euro – Trans 2012</a> <a class="schedule cev"
+  data-ends-at="2012-09-21 18:00:00 +0200" data-starts-at="2012-09-21 15:00:00 +0200" href="/events/1569-Pr-sentation-Be-One/edit" title="Präsentation Be One">Präsentation Be
+  One</a> <a class="schedule cev" data-ends-at="2012-09-20 20:00:00 +0200" data-starts-at="2012-09-20 17:00:00 +0200" href="/events/1568-FINE-Netzwerk-CAE/edit" title="FINE
+  Netzwerk CAE">FINE Netzwerk CAE</a> <a class="schedule cev" data-ends-at="2012-09-20 17:00:00 +0200" data-starts-at="2012-09-20 15:00:00 +0200"
+  href="/events/1567-PVA-Lenkungsausschuss/edit" title="PVA-Lenkungsausschuss">PVA-Lenkungsausschuss</a> <a class="schedule cev" data-ends-at="2012-09-18 00:00:00 +0200"
+  data-starts-at="2012-09-18 18:30:00 +0200" href="/events/1565-hep-Sommerfest/edit" title="hep - Sommerfest">hep - Sommerfest</a> <a class="schedule cev"
+  data-ends-at="2012-09-18 22:00:00 +0200" data-starts-at="2012-09-18 18:00:00 +0200" href="/events/1521-Gute-Gesch-fte-im-Netz-mit-Online/edit" title="Gute Geschäfte im Netz
+  mit Online Marketing ">Gute Geschäfte im Netz mit Online Marketing </a> <a class="schedule cev" data-ends-at="2012-09-21 17:00:00 +0200" data-starts-at="2012-09-18 09:00:00
+  +0200" href="/events/1512-InnoTrans-2012/edit" title="InnoTrans 2012">InnoTrans 2012</a> <a class="schedule cev" data-ends-at="2012-09-17 18:00:00 +0200"
+  data-starts-at="2012-09-17 11:30:00 +0200" href="/events/1564-Klimzug-KoordinatorInnen-Treffen/edit" title="Klimzug-KoordinatorInnen Treffen">Klimzug-KoordinatorInnen
+  Treffen</a> <a class="schedule cev" data-ends-at="2012-09-19 00:00:00 +0200" data-starts-at="2012-09-16 00:00:00 +0200" href="/events/1539-ITSC-2012/edit" title="ITSC
+  2012">ITSC 2012</a> <a class="schedule cev" data-ends-at="2012-09-14 13:00:00 +0200" data-starts-at="2012-09-14 09:00:00 +0200"
+  href="/events/1563-ECCA-2013-Organising-Team-Meeting/edit" title="ECCA 2013 Organising Team Meeting">ECCA 2013 Organising Team Meeting</a> <a class="schedule cev"
+  data-ends-at="2012-09-14 00:00:00 +0200" data-starts-at="2012-09-13 00:00:00 +0200" href="/events/1486-ARTRAC-Consortium-Meeting-in-Turi/edit" title="ARTRAC Consortium
+  Meeting in Turin">ARTRAC Consortium Meeting in Turin</a> <a class="schedule cev" data-ends-at="2012-09-12 22:00:00 +0200" data-starts-at="2012-09-12 18:00:00 +0200"
+  href="/events/1562-FINE-Netzwerk-CAE-Simulation-Date/edit" title="FINE-Netzwerk CAE - Simulation - Datengrab oder Goldschatz?">FINE-Netzwerk CAE - Simulation - Datengrab oder
+  Goldschatz?</a> <a class="schedule cev" data-ends-at="2012-09-12 22:00:00 +0200" data-starts-at="2012-09-12 18:00:00 +0200"
+  href="/events/1520-Simulation-Datengrab-oder-Goldsch/edit" title="Simulation - Datengrab oder Goldschatz? ">Simulation - Datengrab oder Goldschatz? </a> <a class="schedule
+  cev" data-ends-at="2012-09-12 17:00:00 +0200" data-starts-at="2012-09-11 09:30:00 +0200" href="/events/1505-Business-Contracts-in-English/edit" title="Business Contracts in
+  English">Business Contracts in English</a> <a class="schedule cev" data-ends-at="2012-09-12 17:00:00 +0200" data-starts-at="2012-09-11 09:30:00 +0200"
+  href="/events/1561-Innovation-Management-Club-Busine/edit" title="Innovation Management Club - Business Contracts in English">Innovation Management Club - Business Contracts
+  in English</a> <a class="schedule cev" data-ends-at="2012-09-12 00:00:00 +0200" data-starts-at="2012-09-11 00:00:00 +0200" href="/events/1534-CeMAT-Hafenforum-2012/edit"
+  title="CeMAT Hafenforum 2012">CeMAT Hafenforum 2012</a> <a class="schedule cev" data-ends-at="2012-09-09 00:00:00 +0200" data-starts-at="2012-09-09 00:00:00 +0200"
+  href="/events/1457-Strahlenschutzkurs/edit" title="Strahlenschutzkurs">Strahlenschutzkurs</a> <a class="schedule cev" data-ends-at="2012-09-07 00:00:00 +0200"
+  data-starts-at="2012-09-07 00:00:00 +0200" href="/events/1551-Freight-by-Water-Conference-2012/edit" title="Freight by Water Conference 2012">Freight by Water Conference
+  2012</a> <a class="schedule cev" data-ends-at="2012-09-06 17:00:00 +0200" data-starts-at="2012-09-06 15:00:00 +0200" href="/events/1559-Beiratssitzung-Pro-Exzellenzia/edit"
+  title="Beiratssitzung Pro Exzellenzia">Beiratssitzung Pro Exzellenzia</a> <a class="schedule cev" data-ends-at="2012-09-06 16:15:00 +0200" data-starts-at="2012-09-06 09:00:00
+  +0200" href="/events/1558-EMV-Praxis-Seminar/edit" title="EMV - Praxis-Seminar">EMV - Praxis-Seminar</a> <a class="schedule cev" data-ends-at="2012-09-04 13:30:00 +0200"
+  data-starts-at="2012-09-04 11:00:00 +0200" href="/events/1560-KLIMZUG-NORD-Projektausschuss-15-/edit" title="KLIMZUG-NORD Projektausschuss 15. Sitzung">KLIMZUG-NORD
+  Projektausschuss 15. Sitzung</a> <a class="schedule cev" data-ends-at="2012-09-05 00:00:00 +0200" data-starts-at="2012-09-04 00:00:00 +0200"
+  href="/events/1546-TransBaltic-Final-Conference-2012/edit" title="TransBaltic Final Conference 2012">TransBaltic Final Conference 2012</a> <a class="schedule cev"
+  data-ends-at="2012-09-06 00:00:00 +0200" data-starts-at="2012-09-02 00:00:00 +0200" href="/events/1460-biocat-2012/edit" title="biocat 2012">biocat 2012</a> <h3
+  data-gotodate="/events?date=2012-08-01">August 2012</h3> <a class="schedule cev" data-ends-at="2012-08-30 20:30:00 +0200" data-starts-at="2012-08-30 18:00:00 +0200"
+  href="/events/1557-FINE-Netzwerk-CAE/edit" title="FINE Netzwerk CAE">FINE Netzwerk CAE</a> <a class="schedule cev" data-ends-at="2012-08-29 12:00:00 +0200"
+  data-starts-at="2012-08-29 10:00:00 +0200" href="/events/1556-Pr-sentation-Siemens-PSE/edit" title="Präsentation Siemens PSE">Präsentation Siemens PSE</a> <a class="schedule
+  cev" data-ends-at="2012-08-28 18:00:00 +0200" data-starts-at="2012-08-28 16:00:00 +0200" href="/events/1555-Willkommen-zum-MFI-Netzwerktreffe/edit" title="Willkommen zum
+  MFI-Netzwerktreffen">Willkommen zum MFI-Netzwerktreffen</a> <a class="schedule cev" data-ends-at="2012-08-27 13:00:00 +0200" data-starts-at="2012-08-27 09:00:00 +0200"
+  href="/events/1554-KLIMZUG-NORD-Klimawandelfolgen-f-/edit" title="KLIMZUG-NORD Klimawandelfolgen für Wilhelmsburgs Grundwasser- und Entwässerungssystem">KLIMZUG-NORD
+  Klimawandelfolgen für Wilhelmsburgs Grundwasser- und Entwässerungssystem</a> <a class="schedule cev" data-ends-at="2012-08-23 17:00:00 +0200" data-starts-at="2012-08-23
+  10:00:00 +0200" href="/events/1553-Altran-GmbH-Co-KG/edit" title="Altran GmbH Co. KG">Altran GmbH Co. KG</a> <a class="schedule cev" data-ends-at="2012-08-20 13:00:00 +0200"
+  data-starts-at="2012-08-20 09:30:00 +0200" href="/events/1552-easynet-GmbH/edit" title="easynet GmbH">easynet GmbH</a> <a class="schedule cev" data-ends-at="2012-08-02
+  21:00:00 +0200" data-starts-at="2012-08-02 17:00:00 +0200" href="/events/1549-FINE-Netzwerk-CAE/edit" title="FINE Netzwerk CAE">FINE Netzwerk CAE</a> <h3
+  data-gotodate="/events?date=2012-07-01">July 2012</h3> <a class="schedule cev" data-ends-at="2012-07-31 12:30:00 +0200" data-starts-at="2012-07-31 09:30:00 +0200"
+  href="/events/1548-KLIMZUG-Nord-Kursbuch-AG/edit" title="KLIMZUG-Nord Kursbuch AG">KLIMZUG-Nord Kursbuch AG</a> <a class="schedule cev" data-ends-at="2012-08-18 00:00:00
+  +0200" data-starts-at="2012-07-22 00:00:00 +0200" href="/events/1498-IFLOS-6th-Summer-Academy-/edit" title="IFLOS 6th Summer Academy ">IFLOS 6th Summer Academy </a> <a
+  class="schedule cev" data-ends-at="2012-07-19 18:00:00 +0200" data-starts-at="2012-07-19 16:00:00 +0200" href="/events/1544-Aufsichtsratssitzung-TuTech-Innov/edit"
+  title="Aufsichtsratssitzung TuTech Innovation GmbH">Aufsichtsratssitzung TuTech Innovation GmbH</a> <a class="schedule cev" data-ends-at="2012-07-18 17:00:00 +0200"
+  data-starts-at="2012-07-18 15:00:00 +0200" href="/events/1543-Aufsichtsratssitzung-Hamburg-Inno/edit" title="Aufsichtsratssitzung Hamburg Innovation
+  GmbH">Aufsichtsratssitzung Hamburg Innovation GmbH</a> <a class="schedule cev" data-ends-at="2012-07-19 17:00:00 +0200" data-starts-at="2012-07-18 09:00:00 +0200"
+  href="/events/1500-Information-Days-on-Transport-Res/edit" title="Information Days on Transport Research">Information Days on Transport Research</a> <a class="schedule cev"
+  data-ends-at="2012-07-18 00:00:00 +0200" data-starts-at="2012-07-14 00:00:00 +0200" href="/events/1416-HIC-2012-Conference-on-Hydroinfor/edit" title="HIC 2012 - Conference on
+  Hydroinformatics">HIC 2012 - Conference on Hydroinformatics</a> <a class="schedule cev" data-ends-at="2012-07-05 13:30:00 +0200" data-starts-at="2012-07-05 10:30:00 +0200"
+  href="/events/1536-KLIMZUG-NORD-AG-Kulturlandschafte/edit" title="KLIMZUG-NORD AG Kulturlandschaften und Klimawandel">KLIMZUG-NORD AG Kulturlandschaften und Klimawandel</a>
+  <a class="schedule cev" data-ends-at="2012-07-04 18:00:00 +0200" data-starts-at="2012-07-04 16:00:00 +0200" href="/events/1535-Sogeti-High-Tech-GmbH/edit" title="Sogeti High
+  Tech GmbH">Sogeti High Tech GmbH</a> <a class="schedule cev" data-ends-at="2012-07-01 00:00:00 +0200" data-starts-at="2012-07-01 15:00:00 +0200"
+  href="/events/1538-sogeti/edit" title="sogeti">sogeti</a> <a class="schedule cev" data-ends-at="2012-07-01 00:00:00 +0200" data-starts-at="2012-07-01 15:00:00 +0200"
+  href="/events/1537-Titel-1/edit" title="Titel 1">Titel 1</a> <h3 data-gotodate="/events?date=2012-06-01">June 2012</h3> <a class="schedule cev" data-ends-at="2012-06-28
+  00:00:00 +0200" data-starts-at="2012-06-28 00:00:00 +0200" href="/events/1497-Marco-Polo-European-Info-Day/edit" title="Marco Polo European Info Day">Marco Polo European Info
+  Day</a> <a class="schedule cev" data-ends-at="2012-06-27 13:00:00 +0200" data-starts-at="2012-06-27 09:00:00 +0200" href="/events/1533-Betriebsversammlung/edit"
+  title="Betriebsversammlung">Betriebsversammlung</a> <a class="schedule cev" data-ends-at="2012-06-22 15:00:00 +0200" data-starts-at="2012-06-21 08:30:00 +0200"
+  href="/events/1522-Eco-efficient-solutions-in-freigh/edit" title="Eco-efficient solutions in freight transport chains">Eco-efficient solutions in freight transport chains</a>
+  <a class="schedule cev" data-ends-at="2012-06-20 18:00:00 +0200" data-starts-at="2012-06-20 10:00:00 +0200" href="/events/1532-Seminar-Pro-Exzellenzia/edit" title="Seminar
+  Pro Exzellenzia">Seminar Pro Exzellenzia</a> <a class="schedule cev" data-ends-at="2012-06-21 00:00:00 +0200" data-starts-at="2012-06-20 00:00:00 +0200"
+  href="/events/1526-MIBE-2012/edit" title="MIBE 2012">MIBE 2012</a> <a class="schedule cev" data-ends-at="2012-06-19 22:00:00 +0200" data-starts-at="2012-06-19 18:00:00 +0200"
+  href="/events/1476-Patentverwertung-in-Deutschland/edit" title="Patentverwertung in Deutschland">Patentverwertung in Deutschland</a> <a class="schedule cev"
+  data-ends-at="2012-06-15 00:00:00 +0200" data-starts-at="2012-06-15 00:00:00 +0200" href="/events/1504-IBN-Sch-lertag/edit" title="IBN-Schülertag">IBN-Schülertag</a> <a
+  class="schedule cev" data-ends-at="2012-06-14 00:00:00 +0200" data-starts-at="2012-06-14 00:00:00 +0200" href="/events/1503-IBN-2012/edit" title="IBN 2012">IBN 2012</a> <a
+  class="schedule cev" data-ends-at="2012-06-14 17:00:00 +0200" data-starts-at="2012-06-13 09:00:00 +0200" href="/events/1518-6th-International-Scientific-Symp/edit" title="6th
+  International Scientific Symposium on Logistics">6th International Scientific Symposium on Logistics</a> <a class="schedule cev" data-ends-at="2012-06-13 00:00:00 +0200"
+  data-starts-at="2012-06-13 00:00:00 +0200" href="/events/1523-Liability-aspects-related-to-ITS-/edit" title="Liability aspects related to ITS applications">Liability aspects
+  related to ITS applications</a> <a class="schedule cev" data-ends-at="2012-06-14 17:00:00 +0200" data-starts-at="2012-06-12 09:00:00 +0200"
+  href="/events/1511-transfairlog/edit" title="transfairlog">transfairlog</a> <a class="schedule cev" data-ends-at="2012-06-14 17:00:00 +0200" data-starts-at="2012-06-12
+  09:00:00 +0200" href="/events/1510-TOC-Container-Supply-Chain-Europe/edit" title="TOC Container Supply Chain: Europe 2012">TOC Container Supply Chain: Europe 2012</a> <a
+  class="schedule cev" data-ends-at="2012-06-01 00:00:00 +0200" data-starts-at="2012-06-01 00:00:00 +0200" href="/events/1425--FOYER-TEST-EVENT-FOYER-TEST-EVEN/edit"
+  title="[FOYER-TEST-EVENT] [FOYER-TEST-EVENT]">[FOYER-TEST-EVENT] [FOYER-TEST-EVENT]</a> <h3 data-gotodate="/events?date=2012-05-01">May 2012</h3> <a class="schedule cev"
+  data-ends-at="2012-06-01 16:30:00 +0200" data-starts-at="2012-05-31 09:30:00 +0200" href="/events/1491-Train-the-trainer/edit" title="Train the trainer">Train the trainer</a>
+  <a class="schedule cev" data-ends-at="2012-06-01 16:30:00 +0200" data-starts-at="2012-05-31 09:00:00 +0200" href="/events/1490-Train-the-trainer/edit" title="Train the
+  trainer">Train the trainer</a> <a class="schedule cev" data-ends-at="2012-05-30 21:00:00 +0200" data-starts-at="2012-05-30 18:00:00 +0200"
+  href="/events/1481-Besser-und-preisg-nstiger-konstru/edit" title="Besser und preisgünstiger konstruieren">Besser und preisgünstiger konstruieren</a> <a class="schedule cev"
+  data-ends-at="2012-05-30 17:00:00 +0200" data-starts-at="2012-05-30 12:30:00 +0200" href="/events/1519-Open-data-in-intermodal-logistics/edit" title="Open data in intermodal
+  logistics">Open data in intermodal logistics</a> <a class="schedule cev" data-ends-at="2012-05-30 16:30:00 +0200" data-starts-at="2012-05-30 09:15:00 +0200"
+  href="/events/1488-How-to-produce-a-winning-proposal/edit" title="How to produce a winning proposal in Framework 7!">How to produce a winning proposal in Framework 7!</a> <a
+  class="schedule cev" data-ends-at="2012-05-30 16:30:00 +0200" data-starts-at="2012-05-30 09:15:00 +0200" href="/events/1489-How-to-produce-a-winning-proposal/edit" title="How
+  to produce a winning proposal in Framework 7!">How to produce a winning proposal in Framework 7!</a> <a class="schedule cev" data-ends-at="2012-05-24 00:00:00 +0200"
+  data-starts-at="2012-05-24 00:00:00 +0200" href="/events/1515-The-European-Shortsea-Convention/edit" title="The European Shortsea Convention">The European Shortsea
+  Convention</a> <a class="schedule cev" data-ends-at="2012-05-25 00:00:00 +0200" data-starts-at="2012-05-24 00:00:00 +0200"
+  href="/events/1402-3-internationaler-Hafenkongress-K/edit" title="3. internationaler Hafenkongress Karlsruhe">3. internationaler Hafenkongress Karlsruhe</a> <a
+  class="schedule cev" data-ends-at="2012-05-25 00:00:00 +0200" data-starts-at="2012-05-23 00:00:00 +0200" href="/events/1471-13th-International-Radar-Symposiu/edit"
+  title="13th International Radar Symposium">13th International Radar Symposium</a> <a class="schedule cev" data-ends-at="2012-05-24 17:00:00 +0200" data-starts-at="2012-05-22
+  09:00:00 +0200" href="/events/1509-RORO/edit" title="RORO">RORO</a> <a class="schedule cev" data-ends-at="2012-05-22 18:00:00 +0200" data-starts-at="2012-05-21 09:00:00
+  +0200" href="/events/1442-European-Maritime-Day-2012/edit" title="European Maritime Day 2012">European Maritime Day 2012</a> <a class="schedule cev" data-ends-at="2012-05-15
+  22:00:00 +0200" data-starts-at="2012-05-15 18:00:00 +0200" href="/events/1463-Freie-Software-Nur-etwas-f-r-Bast/edit" title="Freie Software – Nur etwas für Bastler? ">Freie
+  Software – Nur etwas für Bastler? </a> <a class="schedule cev" data-ends-at="2012-05-15 00:00:00 +0200" data-starts-at="2012-05-15 00:00:00 +0200"
+  href="/events/1496-IBN-Forum/edit" title="IBN Forum">IBN Forum</a> <a class="schedule cev" data-ends-at="2012-05-14 17:00:00 +0200" data-starts-at="2012-05-14 09:00:00 +0200"
+  href="/events/1482-PEP-NET-Summit-2012/edit" title="PEP-NET Summit 2012">PEP-NET Summit 2012</a> <a class="schedule cev" data-ends-at="2012-05-11 16:00:00 +0200"
+  data-starts-at="2012-05-10 08:00:00 +0200" href="/events/1501-IAV-Conferences/edit" title="IAV Conferences">IAV Conferences</a> <a class="schedule cev"
+  data-ends-at="2012-05-10 16:00:00 +0200" data-starts-at="2012-05-09 08:30:00 +0200" href="/events/1506-eFreight-conference-2012/edit" title="eFreight conference
+  2012">eFreight conference 2012</a> <a class="schedule cev" data-ends-at="2012-05-08 20:30:00 +0200" data-starts-at="2012-05-08 18:30:00 +0200"
+  href="/events/1468-IT-Vertragsrecht/edit" title="IT-Vertragsrecht">IT-Vertragsrecht</a> <a class="schedule cev" data-ends-at="2012-05-03 00:00:00 +0200"
+  data-starts-at="2012-05-03 00:00:00 +0200" href="/events/1424--FOYER-TEST-EVENT-TEST-FOYER-TEST/edit" title="[FOYER-TEST-EVENT] TEST [FOYER-TEST-EVENT]
+  TEST">[FOYER-TEST-EVENT] TEST [FOYER-TEST-EVENT] TEST</a> <a class="schedule cev" data-ends-at="2012-05-04 17:00:00 +0200" data-starts-at="2012-05-02 09:00:00 +0200"
+  href="/events/1508-International-Transport-Forum/edit" title="International Transport Forum">International Transport Forum</a> <a class="schedule cev"
+  data-ends-at="2012-05-01 00:00:00 +0200" data-starts-at="2012-05-01 00:00:00 +0200" href="/events/1455--Aktualisierung-der-Fachkunde-im-/edit" title=" Aktualisierung der
+  Fachkunde im Strahlenschutz"> Aktualisierung der Fachkunde im Strahlenschutz</a> <a class="schedule cev" data-ends-at="2012-05-03 00:00:00 +0200" data-starts-at="2012-05-01
+  00:00:00 +0200" href="/events/1466-Multimodal-2012/edit" title="Multimodal 2012">Multimodal 2012</a> <a class="schedule cev" data-ends-at="2012-05-01 00:00:00 +0200"
+  data-starts-at="2012-05-01 00:00:00 +0200" href="/events/1454-Aktualisierung-der-Fachkunde-im-S/edit" title="Aktualisierung der Fachkunde im Strahlenschutz">Aktualisierung
+  der Fachkunde im Strahlenschutz</a> <h3 data-gotodate="/events?date=2012-04-01">April 2012</h3> <a class="schedule cev" data-ends-at="2012-04-26 00:00:00 +0200"
+  data-starts-at="2012-04-25 00:00:00 +0200" href="/events/1432-4-See-Hafen-Kongress/edit" title="4. See-Hafen-Kongress">4. See-Hafen-Kongress</a> <a class="schedule cev"
+  data-ends-at="2012-04-27 17:00:00 +0200" data-starts-at="2012-04-24 09:00:00 +0200" href="/events/1507-TransRussia-/edit" title="TransRussia ">TransRussia </a> <a
+  class="schedule cev" data-ends-at="2012-04-24 00:00:00 +0200" data-starts-at="2012-04-24 00:00:00 +0200" href="/events/1516-Nur-eine-Testveranstaltung/edit" title="Nur eine
+  Testveranstaltung">Nur eine Testveranstaltung</a> <a class="schedule cev" data-ends-at="2012-04-26 00:00:00 +0200" data-starts-at="2012-04-24 00:00:00 +0200"
+  href="/events/1458-Strahlenschutzkurs/edit" title="Strahlenschutzkurs">Strahlenschutzkurs</a> <a class="schedule cev" data-ends-at="2012-04-26 16:00:00 +0200"
+  data-starts-at="2012-04-23 09:00:00 +0200" href="/events/1434-4th-Transport-Research-Arena-2012/edit" title="4th Transport Research Arena 2012">4th Transport Research Arena
+  2012</a> <a class="schedule cev" data-ends-at="2012-04-26 00:00:00 +0200" data-starts-at="2012-04-23 00:00:00 +0200"
+  href="/events/1470-4th-Transport-Research-Arena-2012/edit" title="4th Transport Research Arena 2012 - Athens">4th Transport Research Arena 2012 - Athens</a> <a
+  class="schedule cev" data-ends-at="2012-04-20 00:00:00 +0200" data-starts-at="2012-04-19 00:00:00 +0200" href="/events/1495-Projektcontrolling-in-Life-Scienc/edit"
+  title="Projektcontrolling in Life Sciences-Unternehmen">Projektcontrolling in Life Sciences-Unternehmen</a> <a class="schedule cev" data-ends-at="2012-04-17 16:00:00 +0200"
+  data-starts-at="2012-04-16 09:00:00 +0200" href="/events/1450-ReMaT-Workshop-for-Early-Stage-Re/edit" title="ReMaT Workshop for Early-Stage-Researchers">ReMaT Workshop for
+  Early-Stage-Researchers</a> <a class="schedule cev" data-ends-at="2012-04-17 00:00:00 +0200" data-starts-at="2012-04-16 00:00:00 +0200"
+  href="/events/1449-ReMaT-Workshop-for-Early-Stage-Re/edit" title="ReMaT Workshop for Early-Stage-Researchers">ReMaT Workshop for Early-Stage-Researchers</a> <h3
+  data-gotodate="/events?date=2012-03-01">March 2012</h3> <a class="schedule cev" data-ends-at="2012-03-29 22:00:00 +0200" data-starts-at="2012-03-29 18:00:00 +0200"
+  href="/events/1480-Simulation-M-glichkeiten-und-Gren/edit" title="Simulation - Möglichkeiten und Grenzen">Simulation - Möglichkeiten und Grenzen</a> <a class="schedule cev"
+  data-ends-at="2012-03-30 00:00:00 +0200" data-starts-at="2012-03-29 00:00:00 +0200" href="/events/1473-ARTRAC-Consortium-Meeting/edit" title="ARTRAC Consortium
+  Meeting">ARTRAC Consortium Meeting</a> <a class="schedule cev" data-ends-at="2012-03-27 20:30:00 +0200" data-starts-at="2012-03-27 18:30:00 +0200"
+  href="/events/1467-Marketing-2012-Mit-Strategie-zum-/edit" title="Marketing 2012 - Mit Strategie zum Erfolg">Marketing 2012 - Mit Strategie zum Erfolg</a> <a class="schedule
+  cev" data-ends-at="2012-03-27 22:00:00 +0200" data-starts-at="2012-03-27 18:00:00 +0200" href="/events/1475-Herausforderungen-der-Wasserwirts/edit" title="Herausforderungen
+  der Wasserwirtschaft">Herausforderungen der Wasserwirtschaft</a> <a class="schedule cev" data-ends-at="2012-03-30 00:00:00 +0200" data-starts-at="2012-03-27 00:00:00 +0200"
+  href="/events/1499-ECO-Transport-Logistics/edit" title="ECO Transport Logistics">ECO Transport Logistics</a> <a class="schedule cev" data-ends-at="2012-03-22 20:00:00 +0100"
+  data-starts-at="2012-03-22 17:00:00 +0100" href="/events/1493-Wissensbilanz-Made-in-Germany/edit" title="Wissensbilanz - Made in Germany">Wissensbilanz - Made in Germany</a>
+  <a class="schedule cev" data-ends-at="2012-03-21 22:00:00 +0100" data-starts-at="2012-03-21 18:00:00 +0100" href="/events/1462-Datenschutz-und-Datensicherheit-i/edit"
+  title="Datenschutz und Datensicherheit in fremden Händen?">Datenschutz und Datensicherheit in fremden Händen?</a> <a class="schedule cev" data-ends-at="2012-03-22 00:00:00
+  +0100" data-starts-at="2012-03-21 00:00:00 +0100" href="/events/1472-ARTRAC-Consortium-Meeting/edit" title="ARTRAC Consortium Meeting">ARTRAC Consortium Meeting</a> <a
+  class="schedule cev" data-ends-at="2012-03-21 00:00:00 +0100" data-starts-at="2012-03-19 00:00:00 +0100" href="/events/1456-Strahlenschutzkurs/edit"
+  title="Strahlenschutzkurs">Strahlenschutzkurs</a> <a class="schedule cev" data-ends-at="2012-03-15 16:00:00 +0100" data-starts-at="2012-03-15 09:00:00 +0100"
+  href="/events/1465-F-rdergelder-f-r-Forschung-und-En/edit" title="Fördergelder für Forschung und Entwicklung">Fördergelder für Forschung und Entwicklung</a> <a
+  class="schedule cev" data-ends-at="2012-03-09 12:30:00 +0100" data-starts-at="2012-03-08 09:00:00 +0100" href="/events/1441-Berner-Tage-on-International-Rail/edit"
+  title="Berner Tage on International Rail Transport Law">Berner Tage on International Rail Transport Law</a> <a class="schedule cev" data-ends-at="2012-03-10 00:00:00 +0100"
+  data-starts-at="2012-03-06 00:00:00 +0100" href="/events/1474-CeBIT-2012-Future-Match/edit" title="CeBIT 2012 Future Match">CeBIT 2012 Future Match</a> <h3
+  data-gotodate="/events?date=2012-02-01">February 2012</h3> <a class="schedule cev" data-ends-at="2012-02-29 17:00:00 +0100" data-starts-at="2012-02-29 09:00:00 +0100"
+  href="/events/1448-Get-funded-English-for-Grant-Writ/edit" title="Get funded! English for Grant Writing">Get funded! English for Grant Writing</a> <a class="schedule cev"
+  data-ends-at="2012-02-29 17:00:00 +0100" data-starts-at="2012-02-29 09:00:00 +0100" href="/events/1447-Get-funded-English-for-Grant-Writ/edit" title="Get funded! English for
+  Grant Writing">Get funded! English for Grant Writing</a> <a class="schedule cev" data-ends-at="2012-02-28 22:00:00 +0100" data-starts-at="2012-02-28 18:00:00 +0100"
+  href="/events/1417-Wissen-in-Wohlstand-verwandeln-/edit" title="Wissen in Wohlstand verwandeln ">Wissen in Wohlstand verwandeln </a> <a class="schedule cev"
+  data-ends-at="2012-02-27 14:00:00 +0100" data-starts-at="2012-02-27 11:00:00 +0100" href="/events/1483-channel-Jobb-rse/edit" title="channel-Jobbörse">channel-Jobbörse</a> <a
+  class="schedule cev" data-ends-at="2012-02-22 18:45:00 +0100" data-starts-at="2012-02-22 17:00:00 +0100" href="/events/1477-Fachkr-fte-halten-und-gewinnen-/edit"
+  title="Fachkräfte halten und gewinnen ">Fachkräfte halten und gewinnen </a> <a class="schedule cev" data-ends-at="2012-02-16 00:00:00 +0100" data-starts-at="2012-02-15
+  00:00:00 +0100" href="/events/1479-Neue-Prozessfenster/edit" title="Neue Prozessfenster">Neue Prozessfenster</a> <a class="schedule cev" data-ends-at="2012-02-16 00:00:00
+  +0100" data-starts-at="2012-02-15 00:00:00 +0100" href="/events/1445-NEU/edit" title="NEU">NEU</a> <a class="schedule cev" data-ends-at="2012-02-14 22:00:00 +0100"
+  data-starts-at="2012-02-14 18:00:00 +0100" href="/events/1452-Wirtschaftsspionage-2-0-/edit" title="Wirtschaftsspionage 2.0 ">Wirtschaftsspionage 2.0 </a> <a class="schedule
+  cev" data-ends-at="2012-02-14 00:00:00 +0100" data-starts-at="2012-02-14 00:00:00 +0100" href="/events/1478-Workshop-des-BIOKATALYSE2021-Proj/edit" title="Workshop des
+  BIOKATALYSE2021-Projekts P29">Workshop des BIOKATALYSE2021-Projekts P29</a> <a class="schedule cev" data-ends-at="2012-02-08 20:30:00 +0100" data-starts-at="2012-02-08
+  18:00:00 +0100" href="/events/1461-Ausblicke-f-r-Zahnmedizin-und-Zah/edit" title="Ausblicke für Zahnmedizin und Zahntechnik">Ausblicke für Zahnmedizin und Zahntechnik</a> <a
+  class="schedule cev" data-ends-at="2012-02-03 00:00:00 +0100" data-starts-at="2012-02-03 09:00:00 +0100" href="/events/1464-Meeting/edit" title="Meeting">Meeting</a> <a
+  class="schedule cev" data-ends-at="2012-02-01 20:30:00 +0100" data-starts-at="2012-02-01 18:30:00 +0100" href="/events/1444-Selbstmanagement-f-r-UnternehmerI/edit"
+  title="Selbstmanagement für UnternehmerInnen">Selbstmanagement für UnternehmerInnen</a> <a class="schedule cev" data-ends-at="2012-02-01 17:00:00 +0100"
+  data-starts-at="2012-02-01 13:00:00 +0100" href="/events/1451-ReGe-Hamburg-Pr-sentation-/edit" title="ReGe Hamburg - Präsentation ">ReGe Hamburg - Präsentation </a> <h3
+  data-gotodate="/events?date=2012-01-01">January 2012</h3> <a class="schedule cev" data-ends-at="2012-02-01 00:00:00 +0100" data-starts-at="2012-01-31 00:00:00 +0100"
+  href="/events/1407-Deponietechnik-2012/edit" title="Deponietechnik 2012">Deponietechnik 2012</a> <a class="schedule cev" data-ends-at="2012-01-29 00:00:00 +0100"
+  data-starts-at="2012-01-28 00:00:00 +0100" href="/events/1469-ARTRAC-Consortium-Meeting/edit" title="ARTRAC Consortium Meeting">ARTRAC Consortium Meeting</a> <h3
+  data-gotodate="/events?date=2011-12-01">December 2011</h3> <a class="schedule cev" data-ends-at="2011-12-31 22:00:00 +0100" data-starts-at="2011-12-31 18:00:00 +0100"
+  href="/events/1453-Wirtschaftsspionage-2-0-Hamburger/edit" title="Wirtschaftsspionage 2.0 - Hamburger Unternehmen im Visier fremder Nachrichtendienste">Wirtschaftsspionage
+  2.0 - Hamburger Unternehmen im Visier fremder Nachrichtendienste</a> <a class="schedule cev" data-ends-at="2011-12-19 16:40:00 +0100" data-starts-at="2011-12-19 14:30:00
+  +0100" href="/events/1446-Test1/edit" title="Test1">Test1</a> <a class="schedule cev" data-ends-at="2011-12-08 20:00:00 +0100" data-starts-at="2011-12-08 17:00:00 +0100"
+  href="/events/1443-Hier-wird-die-Biotechnologie-eing/edit" title="Hier wird die Biotechnologie eingenordet">Hier wird die Biotechnologie eingenordet</a> <a class="schedule
+  cev" data-ends-at="2011-12-08 17:00:00 +0100" data-starts-at="2011-12-07 09:00:00 +0100" href="/events/1440-Riverdating/edit" title="Riverdating">Riverdating</a> <a
+  class="schedule cev" data-ends-at="2011-12-08 00:00:00 +0100" data-starts-at="2011-12-07 00:00:00 +0100" href="/events/1414-Strahlenschutz-Aktualisierung-der/edit"
+  title="Strahlenschutz Aktualisierung der Fachkunde">Strahlenschutz Aktualisierung der Fachkunde</a> <a class="schedule cev" data-ends-at="2011-12-07 00:00:00 +0100"
+  data-starts-at="2011-12-07 00:00:00 +0100" href="/events/1439-1-Sustainable-Logistics-Conferenc/edit" title="1. Sustainable Logistics Conference in Hamburg">1. Sustainable
+  Logistics Conference in Hamburg</a> <h3 data-gotodate="/events?date=2011-11-01">November 2011</h3> <a class="schedule cev" data-ends-at="2011-11-30 20:00:00 +0100"
+  data-starts-at="2011-11-30 16:00:00 +0100" href="/events/1438-Test2/edit" title="Test2">Test2</a> <a class="schedule cev" data-ends-at="2011-11-30 14:00:00 +0100"
+  data-starts-at="2011-11-30 13:00:00 +0100" href="/events/1437-Test1/edit" title="Test1">Test1</a> <a class="schedule cev" data-ends-at="2011-11-29 15:00:00 +0100"
+  data-starts-at="2011-11-29 14:00:00 +0100" href="/events/1436-Test2/edit" title="Test2">Test2</a> <a class="schedule cev" data-ends-at="2011-11-29 14:00:00 +0100"
+  data-starts-at="2011-11-29 13:00:00 +0100" href="/events/1435-Test2/edit" title="Test2">Test2</a> <a class="schedule cev" data-ends-at="2011-12-01 00:00:00 +0100"
+  data-starts-at="2011-11-29 00:00:00 +0100" href="/events/1406-Intermodal-2011/edit" title="Intermodal 2011">Intermodal 2011</a> <a class="schedule cev"
+  data-ends-at="2011-11-10 20:30:00 +0100" data-starts-at="2011-11-10 18:00:00 +0100" href="/events/1428-Besuch-im-Fraunhofer-Center-f-r-M/edit" title="Besuch im
+  Fraunhofer-Center für Maritime Logistik CML an der TUHH ">Besuch im Fraunhofer-Center für Maritime Logistik CML an der TUHH </a> <a class="schedule cev"
+  data-ends-at="2011-11-02 20:30:00 +0100" data-starts-at="2011-11-02 18:00:00 +0100" href="/events/1427-Besuch-des-Living-Place-Hamburg-a/edit" title="Besuch des Living Place
+  Hamburg an der HAW Hamburg">Besuch des Living Place Hamburg an der HAW Hamburg</a> <a class="schedule cev" data-ends-at="2011-11-01 20:00:00 +0100" data-starts-at="2011-11-01
+  10:00:00 +0100" href="/events/1421--FOYER-TEST-EVENT-Test-Eintrag-2/edit" title="[FOYER-TEST-EVENT] Test-Eintrag 2">[FOYER-TEST-EVENT] Test-Eintrag 2</a> <h3
+  data-gotodate="/events?date=2011-10-01">October 2011</h3> <a class="schedule cev" data-ends-at="2011-11-02 00:00:00 +0100" data-starts-at="2011-10-31 00:00:00 +0100"
+  href="/events/1413-Strahlenschutzkurs/edit" title="Strahlenschutzkurs">Strahlenschutzkurs</a> <a class="schedule cev" data-ends-at="2011-10-26 17:00:00 +0200"
+  data-starts-at="2011-10-25 09:30:00 +0200" href="/events/1412-Contracts-in-English-II-/edit" title="Contracts in English II ">Contracts in English II </a> <a class="schedule
+  cev" data-ends-at="2011-10-26 00:00:00 +0200" data-starts-at="2011-10-25 00:00:00 +0200" href="/events/1403-Shortsea-Med-2011/edit" title="Shortsea Med 2011">Shortsea Med
+  2011</a> <a class="schedule cev" data-ends-at="2011-10-24 13:30:00 +0200" data-starts-at="2011-10-24 12:00:00 +0200" href="/events/1430-Test2/edit" title="Test2">Test2</a> <a
+  class="schedule cev" data-ends-at="2011-10-24 11:00:00 +0200" data-starts-at="2011-10-24 07:00:00 +0200" href="/events/1429-Test1/edit" title="Test1">Test1</a> <a
+  class="schedule cev" data-ends-at="2011-10-24 00:00:00 +0200" data-starts-at="2011-10-24 00:00:00 +0200" href="/events/1431-Test3/edit" title="Test3">Test3</a> <h3
+  data-gotodate="/events?date=2011-09-01">September 2011</h3> <a class="schedule cev" data-ends-at="2011-09-30 00:00:00 +0200" data-starts-at="2011-09-28 00:00:00 +0200"
+  href="/events/1411-Strahlenschutz/edit" title="Strahlenschutz">Strahlenschutz</a> <a class="schedule cev" data-ends-at="2011-09-22 00:00:00 +0200" data-starts-at="2011-09-19
+  00:00:00 +0200" href="/events/1405-2nd-International-Conference-on-C/edit" title="2nd International Conference on Computational Logistics ICCL'11">2nd International
+  Conference on Computational Logistics ICCL'11</a> <a class="schedule cev" data-ends-at="2011-09-13 00:00:00 +0200" data-starts-at="2011-09-13 00:00:00 +0200"
+  href="/events/1404-Marco-Polo-Info-Day/edit" title="Marco Polo Info Day">Marco Polo Info Day</a> <a class="schedule cev" data-ends-at="2011-09-13 00:00:00 +0200"
+  data-starts-at="2011-09-12 00:00:00 +0200" href="/events/1410-ReMaT-Workshop-Research-Managemen/edit" title="ReMaT-Workshop Research Management Training">ReMaT-Workshop
+  Research Management Training</a> <a class="schedule cev" data-ends-at="2011-09-09 00:00:00 +0200" data-starts-at="2011-09-09 00:00:00 +0200"
+  href="/events/1420--FOYER-TEST-EVENT-Test-Eintrag-1/edit" title="[FOYER-TEST-EVENT] Test-Eintrag 1">[FOYER-TEST-EVENT] Test-Eintrag 1</a> <a class="schedule cev"
+  data-ends-at="2011-09-09 00:00:00 +0200" data-starts-at="2011-09-09 00:00:00 +0200" href="/events/1426-test44444/edit" title="test44444">test44444</a> <a class="schedule cev"
+  data-ends-at="2011-09-02 22:30:00 +0200" data-starts-at="2011-09-02 20:00:00 +0200" href="/events/1423--FOYER-TEST-EVENT-Text-Event-4/edit" title="[FOYER-TEST-EVENT]
+  Text-Event 4">[FOYER-TEST-EVENT] Text-Event 4</a> <h3 data-gotodate="/events?date=2011-08-01">August 2011</h3> <a class="schedule cev" data-ends-at="2011-08-25 00:00:00
+  +0200" data-starts-at="2011-08-24 00:00:00 +0200" href="/events/1409-BERBION-Symposium/edit" title="BERBION-Symposium">BERBION-Symposium</a> <a class="schedule cev"
+  data-ends-at="2011-08-15 00:00:00 +0200" data-starts-at="2011-08-15 15:00:00 +0200" href="/events/1415-Relaunch-der-Webseite/edit" title="Relaunch der Webseite">Relaunch der
+  Webseite</a> <a class="schedule cev" data-ends-at="2011-08-01 21:00:00 +0200" data-starts-at="2011-08-01 20:00:00 +0200" href="/events/1419-test-3/edit" title="test 3">test
+  3</a> <a class="schedule cev" data-ends-at="2011-08-01 00:00:00 +0200" data-starts-at="2011-08-01 00:00:00 +0200" href="/events/1418-Test-1/edit" title="Test 1">Test 1</a>
+  <h3 data-gotodate="/events?date=2011-06-01">June 2011</h3> <a class="schedule cev" data-ends-at="2011-07-01 00:00:00 +0200" data-starts-at="2011-06-30 00:00:00 +0200"
+  href="/events/1400-Telematik-Kongress-2011-Telematik/edit" title="Telematik-Kongress 2011 Telematik - Schlüssel zur Intermodalität">Telematik-Kongress 2011 Telematik -
+  Schlüssel zur Intermodalität</a> <a class="schedule cev" data-ends-at="2011-06-30 00:00:00 +0200" data-starts-at="2011-06-29 00:00:00 +0200"
+  href="/events/1401-4-European-Shortsea-Congress/edit" title="4. European Shortsea Congress">4. European Shortsea Congress</a> <a class="schedule cev" data-ends-at="2011-06-28
+  00:00:00 +0200" data-starts-at="2011-06-27 00:00:00 +0200" href="/events/1408-Strahlenschutz-Aktualisierung-der/edit" title="Strahlenschutz Aktualisierung der
+  Fachkunde">Strahlenschutz Aktualisierung der Fachkunde</a> <a class="schedule cev" data-ends-at="2011-06-19 20:00:00 +0200" data-starts-at="2011-06-19 14:00:00 +0200"
+  href="/events/1396-Raum-f-r-innovative-Ideen-Donners/edit" title="Raum für innovative Ideen Donnerstag">Raum für innovative Ideen Donnerstag</a> <a class="schedule cev"
+  data-ends-at="2011-06-13 00:00:00 +0200" data-starts-at="2011-06-12 00:00:00 +0200" href="/events/1527-Klimzug-Verbundtreffen/edit" title="Klimzug - Verbundtreffen">Klimzug -
+  Verbundtreffen</a> <a class="schedule cev" data-ends-at="2011-07-02 22:00:00 +0200" data-starts-at="2011-06-10 20:00:00 +0200"
+  href="/events/1422--FOYER-TEST-EVENT-Test-Event-3/edit" title="[FOYER-TEST-EVENT] Test-Event 3">[FOYER-TEST-EVENT] Test-Event 3</a> <h3
+  data-gotodate="/events?date=2011-05-01">May 2011</h3> <a class="schedule cev" data-ends-at="2011-05-27 18:00:00 +0200" data-starts-at="2011-05-25 08:30:00 +0200"
+  href="/events/1397-International-Transport-Forum-201/edit" title="International Transport Forum 2011 ">International Transport Forum 2011 </a> <a class="schedule cev"
+  data-ends-at="2011-05-13 00:00:00 +0200" data-starts-at="2011-05-10 00:00:00 +0200" href="/events/1399-Transport-Logistic/edit" title="Transport Logistic">Transport
+  Logistic</a> <h3 data-gotodate="/events?date=2011-04-01">April 2011</h3> <a class="schedule cev" data-ends-at="2011-04-20 15:30:00 +0200" data-starts-at="2011-04-19 09:00:00
+  +0200" href="/events/1398-Coastlink-short-sea-conference/edit" title="Coastlink short sea conference">Coastlink short sea conference</a> <a class="schedule cev"
+  data-ends-at="2011-04-01 00:00:00 +0200" data-starts-at="2011-04-01 00:00:00 +0200" href="/events/1395-Test-Veranstaltung/edit" title="Test Veranstaltung">Test
+  Veranstaltung</a> <h3 data-gotodate="/events?date=2011-03-01">March 2011</h3> <a class="schedule cev" data-ends-at="2011-03-13 00:00:00 +0100" data-starts-at="2011-03-13
+  00:00:00 +0100" href="/events/1394-F-hrung-ohne-Frauen-Barbara-Schne/edit" title="Führung ohne Frauen? - Barbara Schneider und Sabine Knor diskutieren über Gründe">Führung
+  ohne Frauen? - Barbara Schneider und Sabine Knor diskutieren über Gründe</a> </div>
+      
+      
+      
+  <script type="text/javascript" charset="utf-8">
+  var cal = Calendar.create("#calendar-test");
+  $('.cev').each(function(){
+    var ev = $(this);
+    cal.add_event(ev.attr('title'), ev.attr('href'), new Date(Date.parse(ev.data('starts-at'))), new Date(Date.parse(ev.data('ends-at'))), '#f57900')
+  });
+  </script>
+</body>
+</html>

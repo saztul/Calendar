@@ -1,0 +1,149 @@
+html{
+  background: #eee;
+  font-family: Helvetica, Arial, Sans-serif;
+}
+
+#calendar-test{
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background: white;
+  overflow: auto;
+}
+
+.cell{
+  border: 0px solid #eee;
+  border-width: 0px 1px 1px 0px;
+  height:100%;
+  z-index:1;
+}
+.cell-0{
+  border-left-width: 1px;
+}
+.row-0{
+}
+.cal-entry{
+  height: 14px;
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  white-space:nowrap;
+  overflow: hidden;
+  color: black;
+  padding: 0px .5%;
+  z-index:2;
+}
+.calendar-space-allocator{
+  overflow:hidden;
+  position:absolute;
+  right: 20px;
+  left:30px;
+  top:0px;
+  bottom:auto;
+}
+.cell span{
+  position:absolute;
+  right:1px;
+  top:1px;
+  background: white;
+  padding: 2px 3px;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 100%;
+  color: #ccc;
+  z-index: 10;
+}
+.cell.today{
+  background: #def5ff;
+}
+.cell.today span{
+  background: #def5ff;
+  color: #009ade;
+}
+.month-header{
+  width:30px;
+  font-size: 11px;
+  text-align:center;
+  border-right: 1px solid #eee;
+}
+.month-header::before{
+  font-size: 26px;
+  position: absolute;
+  padding: 0px;
+  line-height:100%;
+  white-space: nowrap;
+  font-weight: 100;
+  -webkit-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  -o-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.in-last-week.month-1 { border-bottom-color: rgb(52, 101, 164);   }
+.in-last-week.month-2 { border-bottom-color: rgb(32, 74, 135);    }
+.in-last-week.month-3 { border-bottom-color: rgb(138, 226, 52);   }
+.in-last-week.month-4 { border-bottom-color: rgb(115, 210, 22);   }
+.in-last-week.month-5 { border-bottom-color: rgb(78, 154, 6);     }
+.in-last-week.month-6 { border-bottom-color: rgb(239, 41, 41);    }
+.in-last-week.month-7 { border-bottom-color: rgb(204, 0, 0);      }
+.in-last-week.month-8 { border-bottom-color: rgb(164, 0, 0);      }
+.in-last-week.month-9 { border-bottom-color: rgb(233, 185, 110);  }
+.in-last-week.month-10{ border-bottom-color: rgb(193, 125, 17);   }
+.in-last-week.month-11{ border-bottom-color: rgb(143, 89, 2);     }
+.in-last-week.month-12{ border-bottom-color: rgb(114, 159, 207);  }
+
+.last-day.month-1 , .cell-6.month-1 { border-right-color: rgb(52, 101, 164);   }
+.last-day.month-2 , .cell-6.month-2 { border-right-color: rgb(32, 74, 135);    }
+.last-day.month-3 , .cell-6.month-3 { border-right-color: rgb(138, 226, 52);   }
+.last-day.month-4 , .cell-6.month-4 { border-right-color: rgb(115, 210, 22);   }
+.last-day.month-5 , .cell-6.month-5 { border-right-color: rgb(78, 154, 6);     }
+.last-day.month-6 , .cell-6.month-6 { border-right-color: rgb(239, 41, 41);    }
+.last-day.month-7 , .cell-6.month-7 { border-right-color: rgb(204, 0, 0);      }
+.last-day.month-8 , .cell-6.month-8 { border-right-color: rgb(164, 0, 0);      }
+.last-day.month-9 , .cell-6.month-9 { border-right-color: rgb(233, 185, 110);  }
+.last-day.month-10, .cell-6.month-10{ border-right-color: rgb(193, 125, 17);   }
+.last-day.month-11, .cell-6.month-11{ border-right-color: rgb(143, 89, 2);     }
+.last-day.month-12, .cell-6.month-12{ border-right-color: rgb(114, 159, 207);  }
+
+.month-header.month-1 { border-color: rgb(52, 101, 164);   color: rgb(52, 101, 164); }
+.month-header.month-2 { border-color: rgb(32, 74, 135);    color: rgb(32, 74, 135); }
+.month-header.month-3 { border-color: rgb(138, 226, 52);   color: rgb(138, 226, 52); }
+.month-header.month-4 { border-color: rgb(115, 210, 22);   color: rgb(115, 210, 22); }
+.month-header.month-5 { border-color: rgb(78, 154, 6);     color: rgb(78, 154, 6); }
+.month-header.month-6 { border-color: rgb(239, 41, 41);    color: rgb(239, 41, 41); }
+.month-header.month-7 { border-color: rgb(204, 0, 0);      color: rgb(204, 0, 0); }
+.month-header.month-8 { border-color: rgb(164, 0, 0);      color: rgb(164, 0, 0); }
+.month-header.month-9 { border-color: rgb(233, 185, 110);  color: rgb(233, 185, 110); }
+.month-header.month-10{ border-color: rgb(193, 125, 17);   color: rgb(193, 125, 17); }
+.month-header.month-11{ border-color: rgb(143, 89, 2);     color: rgb(143, 89, 2); }
+.month-header.month-12{ border-color: rgb(114, 159, 207);  color: rgb(114, 159, 207); }
+
+.month-header.month-1::before{  content:"Januar"; } 
+.month-header.month-2::before{  content:"Februar"; } 
+.month-header.month-3::before{  content:"März"; } 
+.month-header.month-4::before{  content:"April"; } 
+.month-header.month-5::before{  content:"Mai"; } 
+.month-header.month-6::before{  content:"Juni"; } 
+.month-header.month-7::before{  content:"Juli"; } 
+.month-header.month-8::before{  content:"August"; } 
+.month-header.month-9::before{  content:"September"; } 
+.month-header.month-10::before{ content:"Oktober"; }
+.month-header.month-11::before{ content:"November"; }
+.month-header.month-12::before{ content:"Dezember"; }
+
+.month-header.month-1.size-1::before{  content:"Jan"; } 
+.month-header.month-2.size-1::before{  content:"Feb"; } 
+.month-header.month-3.size-1::before{  content:"Mär"; } 
+.month-header.month-4.size-1::before{  content:"Apr"; } 
+.month-header.month-5.size-1::before{  content:"Mai"; } 
+.month-header.month-6.size-1::before{  content:"Jun"; } 
+.month-header.month-7.size-1::before{  content:"Jul"; } 
+.month-header.month-8.size-1::before{  content:"Aug"; } 
+.month-header.month-9.size-1::before{  content:"Sep"; } 
+.month-header.month-10.size-1::before{ content:"Okt"; }
+.month-header.month-11.size-1::before{ content:"Nov"; }
+.month-header.month-12.size-1::before{ content:"Dez"; }
