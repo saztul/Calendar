@@ -51,6 +51,7 @@ window.Calendar = {
   allocate_space: function(target, rows, height){
     var panel_height = (rows * height) + 'px';
     var id = "cal-" + target.attr('id');
+    target.append($('<div id="'+id+'-info" class="hover-info"></div>'));
     target.append($('<div id="'+id+'" class="calendar-space-allocator" style="height:'+panel_height+'"></div>'));
     return id;
   },
@@ -101,17 +102,20 @@ window.Calendar = {
     var events = _Store.daymap[key];
     var cont = $('<div class="inner"></div>'), timed = $('<div class="timed"></div>'), event;
     var id;
+    var extra = [];
+    var slot_height = 8;
     
-    console.log(' ');
-    console.log('fill cell');
+    // console.log(' ');
+    // console.log('fill cell');
     // put events in their prevoiusly assigned slots
     for(var i = 0; i < events.length; i++){
       id = events[i];
       if(_Store.events[id][_Store.keys.slot]){
         slots[_Store.events[id][_Store.keys.slot]] = id;
+        extra[id] = ' cont';
       }
     }
-    console.log(slots);
+    // console.log(slots);
     
     // assing new slots to new events
     var max = 2 * events.length;
@@ -126,7 +130,7 @@ window.Calendar = {
         pos++;
       }
     }
-    console.log(slots);
+    // console.log(slots);
     
     var timed_pos = 0;
     for(var i = 0; i < slots.length; i++){
@@ -134,7 +138,7 @@ window.Calendar = {
         timed_pos = Math.max(timed_pos,i);
       }
     }
-    console.log(timed_pos);
+    // console.log(timed_pos);
 
     for(var i = 0; i < events.length; i++){
       id = events[i];
@@ -142,7 +146,8 @@ window.Calendar = {
       event.attr('title', _Store.events[id][_Store.keys.title]).attr('href', _Store.events[id][_Store.keys.link]);
       if(_Store.events[id][_Store.keys.days] > 1){
         event.addClass('all-day');
-        event.attr('style', 'top:'+((_Store.events[id][_Store.keys.slot]-1)*6)+'px;border-color:'+_Store.events[id][_Store.keys.color]);
+        event.attr('style', 'top:'+((_Store.events[id][_Store.keys.slot]-1)*slot_height)+'px;border-color:'+_Store.events[id][_Store.keys.color]);
+        if(extra[id])event.addClass('cont');
         cont.append(event);
       }
       else{
@@ -150,7 +155,7 @@ window.Calendar = {
         timed.append(event);
       }
     }
-    timed.attr('style', 'top:'+((timed_pos)*6)+'px');
+    timed.attr('style', 'top:'+((timed_pos)*slot_height)+'px');
     timed.attr('data-slot', timed_pos);
     cont.append(timed);
     cell.replaceWith(cont);
@@ -207,7 +212,9 @@ window.Calendar = {
     var today = Time.to_date(new Date());
     
     var space_id = Calendar.allocate_space(target, rows, cell_height);
+    var info_id = space_id+'-info'; 
     var draw_target = $('#'+space_id);
+    var info_pane = $('#'+info_id);
     
     var _Store={
       keys: { id: 0, title: 1, link: 2, from: 3, til: 4 , color: 5, slot: 6, days: 7},
@@ -296,7 +303,7 @@ window.Calendar = {
       classes += ' row-'+row;
       classes += ' cell-'+col;
       var key = ''+date.getDate()+'-'+date.getMonth()+'-'+date.getFullYear();
-      return '<div style="'+attrs+'"><div class="'+classes+'"><span>'+date.getDate()+'</span><div class=inner data-key="'+key+'"></div></div></div>';
+      return '<div style="'+attrs+'"><div data-nr="'+col+'" class="'+classes+'"><span>'+date.getDate()+'</span><div class=inner data-key="'+key+'"></div></div></div>';
     };
     
     Calendar.create_today_anchor(_Env);
@@ -309,6 +316,40 @@ window.Calendar = {
       _refresh_timer = setTimeout(function(){
         Calendar.draw_window(_Env, rows, cell_generator);
       }, 16);
+    });
+    
+    var month_head_width = 30;
+    var scroll_space_width = 20;
+    var pane_width = 202;
+    var calculate_panel_position = function(cell){
+      var parent_width = info_pane.parent().width();
+      var w = parent_width - month_head_width - scroll_space_width;
+      var cell_width = w/7.0;
+      var left = (cell.data('nr')*cell_width) + (cell_width/2) - (pane_width/2) + month_head_width;
+      left = Math.max(month_head_width, left);
+      left = Math.min(parent_width - scroll_space_width - pane_width, left);
+      return left;
+    };
+    
+    var _info_pane_timer;
+    draw_target.on("mouseenter", "a", function(){
+      clearTimeout(_info_pane_timer);
+      window.ip = $(this);
+      var event = $(this);
+      var cell = event.closest('.cell');
+      var pos = cell.parent().position();
+      info_pane.removeClass('left').removeClass('right');
+      if(cell.hasClass('cell-0')){ info_pane.addClass('left'); }
+      if(cell.hasClass('cell-6')){ info_pane.addClass('right'); }
+      info_pane.attr('style', event.attr('style')+';top:'+pos.top+'px;left:'+calculate_panel_position(cell)+'px');
+      var info = $('<div class="content"></div>');
+      info.text(event.attr('title'));
+      info_pane.html('').append(info);
+      info_pane.show();
+    }).on("mouseleave", "a", function(){
+      _info_pane_timer = setTimeout(function(){
+        info_pane.hide();
+      }, 1000);
     });
     
     var Api = {};

@@ -4,9 +4,11 @@ html{
 }
 
 #test{
-  position: relative;
-  width: 800px;
-  height: 800px;
+  position: absolute;
+  top:    0px;
+  right:  0px;
+  bottom: 0px;
+  left:   0px;
   background: white;
   overflow: auto;
 }
@@ -17,13 +19,49 @@ html{
   bottom:3px;
   left:0px;
 }
-
+.hover-info{
+  display: block;
+  position:absolute;
+  z-index: 40;
+  background: rgba(222,222,222,1);
+  width: 200px;
+  margin-top: -86px;
+  height: 68px;
+  border-bottom: 8px solid red;
+}
+.hover-info .content{
+  color: #333;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+.hover-info:after{
+  position: absolute;
+  border: 10px solid transparent;
+  border-top-color: inherit;
+  content: ' ';
+  top: 76px;
+  left: 90px;
+}
+.hover-info.left:after{
+  left: 30px;
+}
+.hover-info.right:after{
+  left: 150px;
+}
 .cell{
-  border: 0px solid #eee;
-  border-width: 0px 1px 1px 0px;
-  height:100%;
+  border-style: solid;
+  border-width: 1px 1px 0px 0px;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  
   z-index:1;
-/*  overflow:hidden;*/
+  overflow:hidden;
+}
+.cell a{
+  text-decoration:none;
 }
 .cell-0{
   border-left-width: 1px;
@@ -35,7 +73,7 @@ html{
   top: 2px;
   right:25px;
   bottom: 1px;
-  left: 3px;
+  left: 5px;
   padding-top:3px;
 }
 .cell .timed a{
@@ -45,21 +83,20 @@ html{
   float: left;
   border: 6px solid #2e3436;
   margin: 0px 3px 3px 0px;
-/*  border-radius: 100%;*/
-  border-radius: 0%;
-/*  border-top-left-radius: 0px;*/
-  border-bottom-right-radius: 5px;
 }
 .cell a.all-day{
   display:block;
   height:0px;
-  overflow:hidden;
-  border-top: 4px solid #ccc;
+  border-top: 7px solid #ccc;
   position:absolute;
-  right: 1px;
+  right: 6px;
   bottom: auto;
-  left: 0px;
+  left: 5px;
 }
+.cell a.all-day.cont{
+  opacity: 0.15;
+}
+
 .cell .slot-1{ top: 2px; }
 .cell .slot-2{ top: 8px; }
 .cell .slot-3{ top: 14px; }
@@ -91,12 +128,11 @@ html{
   right:1px;
   top:auto;
   bottom: 1px;
-  background: white;
   padding: 2px 3px;
   font-size: 18px;
   font-weight: 100;
   line-height: 100%;
-  color: #ccc;
+  color: #aaa;
   z-index: 10;
 }
 .cell.today{
@@ -108,6 +144,7 @@ html{
 }
 .month-header{
   width:30px;
+  color: #888;
   font-size: 11px;
   text-align:center;
   border-right: 1px solid #eee;
@@ -129,44 +166,19 @@ html{
   transform: rotate(90deg);
 }
 
-.in-last-week.month-1 { border-bottom-color: rgb(52, 101, 164);   }
-.in-last-week.month-2 { border-bottom-color: rgb(32, 74, 135);    }
-.in-last-week.month-3 { border-bottom-color: rgb(138, 226, 52);   }
-.in-last-week.month-4 { border-bottom-color: rgb(115, 210, 22);   }
-.in-last-week.month-5 { border-bottom-color: rgb(78, 154, 6);     }
-.in-last-week.month-6 { border-bottom-color: rgb(239, 41, 41);    }
-.in-last-week.month-7 { border-bottom-color: rgb(204, 0, 0);      }
-.in-last-week.month-8 { border-bottom-color: rgb(164, 0, 0);      }
-.in-last-week.month-9 { border-bottom-color: rgb(233, 185, 110);  }
-.in-last-week.month-10{ border-bottom-color: rgb(193, 125, 17);   }
-.in-last-week.month-11{ border-bottom-color: rgb(143, 89, 2);     }
-.in-last-week.month-12{ border-bottom-color: rgb(114, 159, 207);  }
+.month-1  { background: #ffffff; border-color: #ddd; }
+.month-3  { background: #ffffff; border-color: #ddd; }
+.month-5  { background: #ffffff; border-color: #ddd; }
+.month-7  { background: #ffffff; border-color: #ddd; }
+.month-9  { background: #ffffff; border-color: #ddd; }
+.month-11 { background: #ffffff; border-color: #ddd; }
+.month-2  { background: #f6f6f6; border-color: #ddd; }
+.month-4  { background: #f6f6f6; border-color: #ddd; }
+.month-6  { background: #f6f6f6; border-color: #ddd; }
+.month-8  { background: #f6f6f6; border-color: #ddd; }
+.month-10 { background: #f6f6f6; border-color: #ddd; }
+.month-12 { background: #f6f6f6; border-color: #ddd; }
 
-.last-day.month-1 , .cell-6.month-1 { border-right-color: rgb(52, 101, 164);   }
-.last-day.month-2 , .cell-6.month-2 { border-right-color: rgb(32, 74, 135);    }
-.last-day.month-3 , .cell-6.month-3 { border-right-color: rgb(138, 226, 52);   }
-.last-day.month-4 , .cell-6.month-4 { border-right-color: rgb(115, 210, 22);   }
-.last-day.month-5 , .cell-6.month-5 { border-right-color: rgb(78, 154, 6);     }
-.last-day.month-6 , .cell-6.month-6 { border-right-color: rgb(239, 41, 41);    }
-.last-day.month-7 , .cell-6.month-7 { border-right-color: rgb(204, 0, 0);      }
-.last-day.month-8 , .cell-6.month-8 { border-right-color: rgb(164, 0, 0);      }
-.last-day.month-9 , .cell-6.month-9 { border-right-color: rgb(233, 185, 110);  }
-.last-day.month-10, .cell-6.month-10{ border-right-color: rgb(193, 125, 17);   }
-.last-day.month-11, .cell-6.month-11{ border-right-color: rgb(143, 89, 2);     }
-.last-day.month-12, .cell-6.month-12{ border-right-color: rgb(114, 159, 207);  }
-
-.month-header.month-1 { border-color: rgb(52, 101, 164);   color: rgb(52, 101, 164); }
-.month-header.month-2 { border-color: rgb(32, 74, 135);    color: rgb(32, 74, 135); }
-.month-header.month-3 { border-color: rgb(138, 226, 52);   color: rgb(138, 226, 52); }
-.month-header.month-4 { border-color: rgb(115, 210, 22);   color: rgb(115, 210, 22); }
-.month-header.month-5 { border-color: rgb(78, 154, 6);     color: rgb(78, 154, 6); }
-.month-header.month-6 { border-color: rgb(239, 41, 41);    color: rgb(239, 41, 41); }
-.month-header.month-7 { border-color: rgb(204, 0, 0);      color: rgb(204, 0, 0); }
-.month-header.month-8 { border-color: rgb(164, 0, 0);      color: rgb(164, 0, 0); }
-.month-header.month-9 { border-color: rgb(233, 185, 110);  color: rgb(233, 185, 110); }
-.month-header.month-10{ border-color: rgb(193, 125, 17);   color: rgb(193, 125, 17); }
-.month-header.month-11{ border-color: rgb(143, 89, 2);     color: rgb(143, 89, 2); }
-.month-header.month-12{ border-color: rgb(114, 159, 207);  color: rgb(114, 159, 207); }
 
 .month-header.month-1::before{  content:"Januar"; } 
 .month-header.month-2::before{  content:"Februar"; } 
