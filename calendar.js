@@ -50,7 +50,7 @@ window.Calendar = {
   
   allocate_space: function(target, rows, height){
     var panel_height = (rows * height) + 'px';
-    var id = "calendar-" + target.attr('id');
+    var id = "cal-" + target.attr('id');
     target.append($('<div id="'+id+'" class="calendar-space-allocator" style="height:'+panel_height+'"></div>'));
     return id;
   },
@@ -96,6 +96,41 @@ window.Calendar = {
   // 
   // drawing
   // 
+  fill_cell: function(_Store, key, cell){
+    var events = _Store.daymap[key];
+    var cont = $('<div class="inner"></div>'), timed = $('<div class="timed"></div>'), event;
+    var id, top = 0;
+    for(var i = 0; i < events.length; i++){
+      id = events[i];
+      event = $('<a href="#"></a>');
+      event.attr('title', _Store.events[id][_Store.keys.title]).attr('href', _Store.events[id][_Store.keys.link]);
+      if(_Store.events[id][_Store.keys.days] > 1){
+        event.addClass('all-day');
+        event.attr('style', 'top:'+top+'px;border-color:'+_Store.events[id][_Store.keys.color]);
+        top += 6;
+        cont.append(event);
+      }
+      else{
+        event.attr('style', 'border-color:'+_Store.events[id][_Store.keys.color]);
+        timed.append(event);
+      }
+    }
+    timed.attr('style', 'top:'+top+'px');
+    cont.append(timed);
+    cell.replaceWith(cont);
+  },
+  
+  fill_visible: function(_Env, _Store){
+    var key, cell, self = this;
+    $.map(_Env.context().find('.inner'), function(e, i){
+      cell = $(e);
+      key = cell.data('key');
+      if(_Store.daymap[key]){
+        self.fill_cell(_Store, key, cell);
+      }
+    });
+  },
+
   
   draw_window: function(_Env, rows, cell_generator){
     var window_offset = _Env.context().scrollTop();
@@ -110,6 +145,7 @@ window.Calendar = {
       for(var block = first_block; block <= last_block; block++){
         Calendar.draw_block(_Env, block, cell_height, cell_generator);
       }
+      _Env.fill_events();
       return { first: first_block, last: last_block };
     });
   },
@@ -137,7 +173,12 @@ window.Calendar = {
     var space_id = Calendar.allocate_space(target, rows, cell_height);
     var draw_target = $('#'+space_id);
     
-    
+    var _Store={
+      keys: { id: 0, title: 1, link: 2, from: 3, til: 4 , color: 5, slot: 6, days: 7},
+      events: [],
+      daymap: {}
+    };
+
     var _Env = {};
     
     // map date to field
@@ -161,7 +202,7 @@ window.Calendar = {
     
     _Env.map_coordinate_to_screen = function(coordinate){
       return 'position:absolute;'+
-        'width: 14.2857142857%;' +
+        'width:14.2857142857%;' +
         'height:' + (cell_height) + 'px;' +
         'top:' + (coordinate.row * cell_height) + 'px;' + 
         'left:' + (coordinate.col * 14.2857142857) + '%;';
@@ -178,6 +219,14 @@ window.Calendar = {
     _Env.cell_height = function(){
       return cell_height;
     };
+    
+    var _fill_timer;
+    _Env.fill_events = function(){
+      clearTimeout(_fill_timer);
+      _fill_timer = setTimeout(function(){
+        Calendar.fill_visible(_Env, _Store);
+      }, 100);
+    }
     
     var _draw_status = [];
     _Env.update_draw_status = function(id, new_status){
@@ -210,7 +259,8 @@ window.Calendar = {
       classes += ' month-'+(date.getMonth()+1);
       classes += ' row-'+row;
       classes += ' cell-'+col;
-      return '<div style="'+attrs+'"><div class="'+classes+'"><span>'+date.getDate()+'</span></div></div>';
+      var key = ''+date.getDate()+'-'+date.getMonth()+'-'+date.getFullYear();
+      return '<div style="'+attrs+'"><div class="'+classes+'"><span>'+date.getDate()+'</span><div class=inner data-key="'+key+'"></div></div></div>';
     };
     
     Calendar.create_today_anchor(_Env);
@@ -224,13 +274,7 @@ window.Calendar = {
         Calendar.draw_window(_Env, rows, cell_generator);
       }, 16);
     });
-
-    var _Store={
-      keys: { id: 0, title: 1, link: 2, from: 3, til: 4 , color: 5, slot: 6, days: 7},
-      events: [],
-      daymap: {}
-    };
-
+    
     var Api = {};
     Api.add_event = function(title, link, from, til, color){
       var id = _Store.events.length;
@@ -247,6 +291,7 @@ window.Calendar = {
         
         if(!_Store.daymap[key]){_Store.daymap[key] = [];}
         _Store.daymap[key].push(id);
+        _Env.fill_events();
       }
     };
     Api.store = function(){return _Store};
