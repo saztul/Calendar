@@ -97,17 +97,52 @@ window.Calendar = {
   // drawing
   // 
   fill_cell: function(_Store, key, cell){
+    var slots = [];
     var events = _Store.daymap[key];
     var cont = $('<div class="inner"></div>'), timed = $('<div class="timed"></div>'), event;
-    var id, top = 0;
+    var id;
+    
+    console.log(' ');
+    console.log('fill cell');
+    // put events in their prevoiusly assigned slots
+    for(var i = 0; i < events.length; i++){
+      id = events[i];
+      if(_Store.events[id][_Store.keys.slot]){
+        slots[_Store.events[id][_Store.keys.slot]] = id;
+      }
+    }
+    console.log(slots);
+    
+    // assing new slots to new events
+    var max = 2 * events.length;
+    var pos = 1;
+    for(var i = 0; i < events.length; i++){
+      id = events[i];
+      while(_Store.events[id][_Store.keys.slot] == 0 && _Store.events[id][_Store.keys.days] > 1){
+        if(!slots[pos]){
+          _Store.events[id][_Store.keys.slot] = pos
+          slots[pos] = id;
+        }
+        pos++;
+      }
+    }
+    console.log(slots);
+    
+    var timed_pos = 0;
+    for(var i = 0; i < slots.length; i++){
+      if(slots[i]){
+        timed_pos = Math.max(timed_pos,i);
+      }
+    }
+    console.log(timed_pos);
+
     for(var i = 0; i < events.length; i++){
       id = events[i];
       event = $('<a href="#"></a>');
       event.attr('title', _Store.events[id][_Store.keys.title]).attr('href', _Store.events[id][_Store.keys.link]);
       if(_Store.events[id][_Store.keys.days] > 1){
         event.addClass('all-day');
-        event.attr('style', 'top:'+top+'px;border-color:'+_Store.events[id][_Store.keys.color]);
-        top += 6;
+        event.attr('style', 'top:'+((_Store.events[id][_Store.keys.slot]-1)*6)+'px;border-color:'+_Store.events[id][_Store.keys.color]);
         cont.append(event);
       }
       else{
@@ -115,7 +150,8 @@ window.Calendar = {
         timed.append(event);
       }
     }
-    timed.attr('style', 'top:'+top+'px');
+    timed.attr('style', 'top:'+((timed_pos)*6)+'px');
+    timed.attr('data-slot', timed_pos);
     cont.append(timed);
     cell.replaceWith(cont);
   },

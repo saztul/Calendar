@@ -23,6 +23,7 @@ html{
   border-width: 0px 1px 1px 0px;
   height:100%;
   z-index:1;
+/*  overflow:hidden;*/
 }
 .cell-0{
   border-left-width: 1px;
