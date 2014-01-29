@@ -134,7 +134,7 @@ window.Calendar = {
     
     var timed_pos = 0;
     for(var i = 1; i < slots.length; i++){
-      if(slots[i]){
+      if(typeof slots[i] != 'undefined'){
         timed_pos = Math.max(timed_pos,i);
       }
     }
