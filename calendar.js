@@ -102,7 +102,6 @@ window.Calendar = {
     var events = _Store.daymap[key];
     var cont = $('<div class="inner"></div>'), timed = $('<div class="timed"></div>'), event;
     var id;
-    var extra = [];
     var slot_height = 8;
     
     // console.log(' ');
@@ -112,7 +111,6 @@ window.Calendar = {
       id = events[i];
       if(_Store.events[id][_Store.keys.slot]){
         slots[_Store.events[id][_Store.keys.slot]] = id;
-        extra[id] = ' cont';
       }
     }
     // console.log(slots);
@@ -147,7 +145,11 @@ window.Calendar = {
       if(_Store.events[id][_Store.keys.days] > 1){
         event.addClass('all-day');
         event.attr('style', 'top:'+((_Store.events[id][_Store.keys.slot]-1)*slot_height)+'px;border-color:'+_Store.events[id][_Store.keys.color]);
-        if(extra[id])event.addClass('cont');
+        var event_start = _Store.events[id][_Store.keys.from];
+        var ekey = ''+event_start.getDate()+'-'+event_start.getMonth()+'-'+event_start.getFullYear();
+        if(key != ekey){
+          event.addClass('cont');
+        }
         cont.append(event);
       }
       else{

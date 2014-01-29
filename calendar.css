@@ -62,6 +62,7 @@ html{
 }
 .cell a{
   text-decoration:none;
+  cursor: pointer;
 }
 .cell-0{
   border-left-width: 1px;
