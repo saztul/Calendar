@@ -133,7 +133,7 @@ window.Calendar = {
     // console.log(slots);
     
     var timed_pos = 0;
-    for(var i = 0; i < slots.length; i++){
+    for(var i = 1; i < slots.length; i++){
       if(slots[i]){
         timed_pos = Math.max(timed_pos,i);
       }
