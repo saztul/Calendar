@@ -104,8 +104,6 @@ window.Calendar = {
     var id;
     var slot_height = 8;
     
-    // console.log(' ');
-    // console.log('fill cell');
     // put events in their prevoiusly assigned slots
     for(var i = 0; i < events.length; i++){
       id = events[i];
@@ -113,7 +111,6 @@ window.Calendar = {
         slots[_Store.events[id][_Store.keys.slot]] = id;
       }
     }
-    // console.log(slots);
     
     // assing new slots to new events
     var max = 2 * events.length;
@@ -128,7 +125,6 @@ window.Calendar = {
         pos++;
       }
     }
-    // console.log(slots);
     
     var timed_pos = 0;
     for(var i = 1; i < slots.length; i++){
@@ -136,7 +132,6 @@ window.Calendar = {
         timed_pos = Math.max(timed_pos,i);
       }
     }
-    // console.log(timed_pos);
 
     for(var i = 0; i < events.length; i++){
       id = events[i];
@@ -301,7 +296,6 @@ window.Calendar = {
         clearTimeout(_store_pos_delay);
         _store_pos_delay = setTimeout(function(){
           sessionStorage.setItem(space_id + '.scroll', target.scrollTop());
-          console.log('storing '+target.scrollTop());
         }, 1000);
       };
       _Env.today = function(){
@@ -312,11 +306,9 @@ window.Calendar = {
       };
       _Env.restore_pos = function(){
         if(sessionStorage.getItem(space_id + '.scroll') !== null){
-          console.log('restoring '+sessionStorage.getItem(space_id + '.scroll'));
           target.scrollTop(sessionStorage.getItem(space_id + '.scroll'));
         }
         else{
-          console.log('restoring today');
           _Env.today();
         }
       };
