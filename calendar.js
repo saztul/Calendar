@@ -295,6 +295,36 @@ window.Calendar = {
       _refresh_timer = setTimeout(callback, 16);
     };
 
+    var _store_pos_delay;
+    if (typeof(sessionStorage) !='undefined'){
+      _Env.store_pos = function(){
+        clearTimeout(_store_pos_delay);
+        _store_pos_delay = setTimeout(function(){
+          sessionStorage.setItem(space_id + '.scroll', target.scrollTop());
+          console.log('storing '+target.scrollTop());
+        }, 1000);
+      };
+      _Env.today = function(){
+        var sel = target.find('.today-anchor')
+        if(sel && sel.offset()){
+          $('#event-calendar').scrollTop(sel.offset().top - (target.height()/3));
+        }
+      };
+      _Env.restore_pos = function(){
+        if(sessionStorage.getItem(space_id + '.scroll') !== null){
+          console.log('restoring '+sessionStorage.getItem(space_id + '.scroll'));
+          target.scrollTop(sessionStorage.getItem(space_id + '.scroll'));
+        }
+        else{
+          console.log('restoring today');
+          _Env.today();
+        }
+      };
+    }else{
+      _Env.store_pos = function(){};
+      _Env.restore_pos = function(){};
+    }
+    
     var cell_generator = function(row, col, attrs){
       var date = _Env.coordinate_to_date({ row: row, col: col });
       var classes = 'cell';
@@ -312,12 +342,14 @@ window.Calendar = {
     Calendar.create_today_anchor(_Env);
     Calendar.draw_month_headers(target, space_id, from, til, cell_height);
     Calendar.draw_window(_Env, rows, cell_generator);
+    setTimeout(function(){ _Env.restore_pos(); }, 100);
     
     var _refresh_timer = null;
     target.scroll(function(e){
       clearTimeout(_refresh_timer);
       _refresh_timer = setTimeout(function(){
         Calendar.draw_window(_Env, rows, cell_generator);
+        _Env.store_pos();
       }, 16);
     });
     
@@ -374,6 +406,7 @@ window.Calendar = {
         _Env.fill_events();
       }
     };
+    Api.today = function(){ _Env.today(); };
     Api.store = function(){return _Store};
     return Api;
   }
