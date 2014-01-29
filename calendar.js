@@ -303,7 +303,8 @@ window.Calendar = {
       classes += ' row-'+row;
       classes += ' cell-'+col;
       var key = ''+date.getDate()+'-'+date.getMonth()+'-'+date.getFullYear();
-      return '<div style="'+attrs+'"><div data-nr="'+col+'" class="'+classes+'"><span>'+date.getDate()+'</span><div class=inner data-key="'+key+'"></div></div></div>';
+      var date_str = ''+date.getFullYear()+'-'+(date.getMonth() < 9 ? '0':'')+(date.getMonth()+1)+'-'+(date.getDate() < 10 ? '0':'')+date.getDate();
+      return '<div style="'+attrs+'"><div data-nr="'+col+'" data-date="'+date_str+'" class="'+classes+'"><span>'+date.getDate()+'</span><div class=inner data-key="'+key+'"></div></div></div>';
     };
     
     Calendar.create_today_anchor(_Env);
