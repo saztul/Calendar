@@ -37,6 +37,7 @@ html{
 .hover-info:after{
   position: absolute;
   border: 10px solid transparent;
+  border-bottom-width: 0px;
   border-top-color: inherit;
   content: ' ';
   top: 76px;
