@@ -306,8 +306,8 @@ window.Calendar = {
       };
       _Env.today = function(){
         var sel = target.find('.today-anchor')
-        if(sel && sel.offset()){
-          $('#event-calendar').scrollTop(sel.offset().top - (target.height()/3));
+        if(sel && sel.position()){
+          $('#event-calendar').scrollTop(sel.position().top);
         }
       };
       _Env.restore_pos = function(){
